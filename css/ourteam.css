@@ -10,6 +10,13 @@
     grid-template-columns: auto;
     
 }
+#fadeDivTeam{
+    display: flex;
+    flex-direction: column;
+}
+#pTeam{
+    align-self: center;
+}
 
 .person-name{
     font-family: 'Open Sans', sans-serif;

@@ -17,7 +17,7 @@ input{
     width: 50vw;
     align-self: center;
     justify-self: center;
-    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.358);
+    box-shadow: 2px 2px 4px rgba(var(--primary), 0.358);
     padding: 0px 7px;
     border-radius: 6px;
     color: #ffffff;
@@ -86,7 +86,7 @@ input{
     
     .btn:hover:before {
     width: 100%;
-    background: #b1dae7;
+    background: rgb(var(--primary));
     }
 
     .btn:hover span{
@@ -94,7 +94,8 @@ input{
     }
     
     .btn:hover svg {
-    transform: translateX(0);
+        transform: translateX(0);
+        stroke: black;
     }
     
     .btn:active {

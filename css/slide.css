@@ -8,13 +8,13 @@
 }
 
 svg circle{
-    stroke: white;
+    stroke: rgba(var(--primary),1);
     stroke-width: 3px;
     fill: transparent;
     transition: all 0.3s cubic-bezier(0.65, 0, 0.076, 1);;
 }
 #cc1{
-    fill:white;
+    fill: rgba(var(--primary),1);
 }
 
 svg circle:hover{
