@@ -1,0 +1,31 @@
+:root{
+    --text: 225, 255, 238;
+    --background: 0, 36, 16;
+    --primary: 93, 254, 246;
+    --secondary: 4, 78, 37;
+    --accent: 27, 152, 254;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Allerta:700|Open Sans:400');
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Allerta','sans-serif';
+    font-weight: 700;
+    color: rgb(var(--text));
+  }
+
+
+  
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}

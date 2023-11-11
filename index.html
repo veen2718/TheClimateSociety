@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/ourteam.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/fade.js"></script>
+    <script>
+        $(window).scroll(function(){
+    $(".fadeDiv").each(function(){
+        var elementTop = $(this).offset().top;
+        var elementHeight = $(this).outerHeight();
+        var elementMiddle = elementTop + (elementHeight / 2);
+        var windowTop = $(window).scrollTop();
+        var windowBottom = windowTop + $(window).height();
+        var windowHeight = $(window).height();
+        var windowMiddle = windowTop + (windowHeight / 2);
+        
+        // Calculate the distance of the element's middle from the window's middle
+        var distanceFromMiddle = Math.abs(windowMiddle - elementMiddle);
+        
+        // Calculate the maximum possible distance from the middle
+        var maxDistance = (windowHeight + elementHeight) / 2;
+        
+        // Normalize the distance to a value between 0 and 1
+        var normalizedDistance = distanceFromMiddle / maxDistance;
+        
+        // Use a sine wave to adjust the opacity such that it quickly becomes transperant near the edges
+        var opacity = Math.pow(Math.sin((1 - normalizedDistance) * Math.PI / 2),3);
+        
+        $(this).css("opacity", opacity);
+    });
+});
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            console.log('DOMContentLoaded')
+            var items = document.getElementById("slideItems");
+            items.style.left = "90vw"
+            for(let i = 1; i < 4;i++){
+                var circle = document.getElementById(`c${i}`);
+                circle.addEventListener('click', function(){
+                    move(i,items)
+                })
+            }
+            
+            
+            
+        });
+        function move(x,items){
+            var positions = [90,5,-80]
+            oldpos = parseInt((items.style.left).replace("vw",""))
+            oldindex = positions.indexOf(oldpos);
+            var circle1 = document.getElementById(`cc${oldindex+1}`)
+            console.log(`cc${oldindex+1}`)
+            console.log(items.style.left)
+            items.style.left = `${positions[x-1]}vw`
+            var circle2 = document.getElementById(`cc${x}`)
+            circle2.style.fill = "white"
+            circle1.style.fill = "transparent"
+        }
+        
+    </script>
+    <script>
+        function scrollToPos(vh){
+            console.log(vh)
+            console.log(window.innerHeight*(vh/100))
+            window.scrollTo(0,window.innerHeight*(vh/100))
+        }
+    </script>
+</head>
+
+<body>
+    <div id="header"> 
+        <p class="headerElement" onclick="scrollToPos(0)">HOME</p>
+        <p class="headerElement" onclick="scrollToPos(100)">OUR PROJECTS</p>
+        <p class="headerElement" onclick="scrollToPos(200)">OUR TEAM</p>
+        <p class="headerElement" onclick="scrollToPos(280)">CONTACT US</p>
+        <a href="./blog"><p class="headerElement"> BLOG </p></a>
+    </div>
+    <div class="main" id="s1">
+        <div id="s1items" class="fadeDiv">
+
+
+        <img src="assets/logo.png" alt="logo" id="logo">   
+
+        <h1> THE CLIMATE SOCIETY </h1>
+        
+        <div id="slideItems">
+            <p class="slideP" id="p1">
+                Established in 2022, The Climate Society is a distinguished non-profit organization that recognizes climate change as an unparalleled environmental challenge necessitating immediate collective action. Our paramount objective is to cultivate a sustainable future for all by ameliorating the ramifications of climate change through the diligent application of education, unwavering advocacy, and decisive action. We ardently believe that climate change represents the defining challenge of our epoch, and we are unwaveringly committed to enabling individuals, communities, and governments to institute substantive measures for its resolution.
+            </p>
+            <p class="slideP" id="p2">
+                Our ultimate aim is to catalyze a global movement that not only comprehends the exigency of this crisis but also cooperatively strives to institute a healthier, more equitable, and sustainable world. In our capacity as an organization, we have proactively undertaken the task of addressing climate change by instituting The Climate Society. Functioning as an Environmental, Social, and Governance (ESG) consulting body, The Climate Society offers its expertise to enterprises across the globe, aiding them in identifying innovative environmental solutions to significantly curtail their carbon emissions. 
+            </p>
+            <p class="slideP" id="p3">
+                Our primary goal is to inspire businesses to embrace sustainable practices that not only redound to the benefit of the environment but also enhance their long-term financial outlook. By engaging with corporations spanning diverse sectors, our aspiration is to impel them to assume a pioneering role in the battle against climate change, thereby setting a salutary precedent for others to emulate. The Climate Society remains unwaveringly committed to the advancement of environmental sustainability and the pursuit of a future that is characterized by equity and sustainability for all. Through a judicious fusion of education, steadfast advocacy, and decisive action, we are diligently striving to diminish the impact of climate change and kindle a global movement that comprehends the urgency of the challenge before us. Through The Climate Society, our fervent hope is to inspire and embolden businesses worldwide to instate sustainable practices and actively partake in the collective endeavor to combat climate change. 
+            </p>
+        </div>
+        <div id="positionControl">
+            <svg id= "c1" width="30" height="35">
+                <circle id = "cc1" cx="15" cy="20" r="12"></circle>
+            </svg>
+            <svg id= "c2" width="30" height="35">
+                <circle id = "cc2" cx="15" cy="20" r="12"></circle>
+            </svg>
+            <svg id= "c3" width="30" height="35">
+                <circle id = "cc3" cx="15" cy="20" r="12"></circle>
+            </svg>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="main" id="s2"> 
+        <div class="fadeDiv">
+            <h1> OUR PROJECTS</h1>
+            <hr class="projectLine">
+
+            <div class="projects">
+                <div class="project" id="bottleDrive"> 
+                    <h3>
+                        Bottle Drive
+                    </h3>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
+                    </p>
+
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                      </button>
+                </div>
+
+
+
+
+                <div class="project" id="signProtesting"> 
+                    <h3>
+                        Sign Protesting
+                    </h3>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
+                    </p>
+
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                      </button>
+                </div>
+
+
+
+
+                <div class="project" id="reforesting"> 
+                    <h3>
+                        Reforesting
+                    </h3>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
+                    </p>
+
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                      </button>
+                </div>
+
+
+
+                <div class="project" id="parkCleanups"> 
+                    <h3>
+                        Park Cleanups
+                    </h3>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
+                    </p>
+
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                      </button>
+                </div>
+
+
+
+
+                <div class="project" id="invasiveSpeciesPull"> 
+                    <h3>
+                        Invasive Species Pull
+                    </h3>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
+                    </p>
+
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                      </button>
+                </div>
+                
+
+
+                <div class="project" id="UBCBotanicalGarden"> 
+                    <h3>
+                        UBC Botanical Garden
+                    </h3>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
+                    </p>
+
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                      </button>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="main" id="s3"> 
+        <div class="fadeDiv">
+            <h1> OUR TEAM</h1>
+            <p class="pMain">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. 
+            </p>
+            
+            <div class="teamgrid">
+                <div class="person">
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <h4 class="person-name">Richard Wang</h4>
+                    <h5 class="person-title">Co-Founder, Co-President</h5>
+                </div>
+                <div class="person">
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <h4 class="person-name">Otavio Nunes</h4>
+                    <h5 class="person-title">Co-Founder, Co-President</h5>
+                </div>
+                <div class="person">
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <h4 class="person-name">Jayden Vo</h4>
+                    <h5 class="person-title">Vice-President</h5>
+                </div>
+                <div class="person">
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <h4 class="person-name">Steven Wang</h4>
+                    <h5 class="person-title">Events Director</h5>
+                </div>
+                <div class="person">
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <h4 class="person-name">Everett Andres</h4>
+                    <h5 class="person-title">Outreach</h5>
+                </div>
+                <div class="person">
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <h4 class="person-name">Cristian Eng</h4>
+                    <h5 class="person-title">Marketing</h5>
+                </div>
+                <div class="person">
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <h4 class="person-name">Praveen Mohadevan</h4>
+                    <h5 class="person-title">Technology/Web Development</h5>
+                </div>
+                <div class="person">
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <h4 class="person-name">Aryan Dudeja</h4>
+                    <h5 class="person-title">Volunteer Coordinator</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="s4"> 
+        <div class="inputContainer">
+            <h1> CONTACT US</h1>
+            <form 
+                id="responseForm"
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycbzu60oHw5VjQjfrdxlJwJcIBt8y-A99uPXyUknaxxbQvugawszR_1R81IF6JsDQrc3o/exec"
+            >
+                <input class="inputField" name="Name" type="text" placeholder="Name" required>
+                <input class="inputField" name="Email" type="email" placeholder="Email Adress" required>
+                <input class="inputField" name="Phone Number" type="tel" placeholder="Phone Number (Optional)">
+                <textarea class="inputField" name="Message" type="text" placeholder="Message" id="msg" required></textarea>
+                <button class="btn" type="submit">
+                    <span>Submit</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.getElementById('responseForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+    
+            var formData = new FormData(this);
+
+            var pdtOffset = 7 * 60 * 60 * 1000; //7 hours * 60 minutes * 60 seconds * 1000 milliseconds
+            var now = new Date();
+
+            var pdtTime = new Date(now.getTime())
+
+            var year = pdtTime.getFullYear()
+            var month = (String(pdtTime.getMonth()+1)).padStart(2,'0')
+            var date = (String(pdtTime.getDate())).padStart(2,'0')
+            var hours = (String(pdtTime.getHours())).padStart(2,'0')
+            var minutes = (String(pdtTime.getMinutes())).padStart(2,'0')
+            var seconds = (String(pdtTime.getSeconds())).padStart(2,'0')
+
+            var time = `${year}-${month}-${date}, ${hours}:${minutes}:${seconds}`
+            formData.append('Time', time);
+
+            fetch(this.action, {
+                method: 'POST',
+                body: formData
+            }).then(response => {
+                if(response.ok) {
+                    console.log('Data submitted successfully');
+                    // Add your code here for a success message
+                } else {
+                    console.error('An error occurred');
+                    // Add your code here for an error message
+                }
+            }).catch(error => console.error('Error:', error));
+        });
+    </script>
+
+
+
+</body>
