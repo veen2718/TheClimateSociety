@@ -75,6 +75,8 @@ button {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+    transition: all 0.3s ease;
+
    }
    
    button.learn-more {
@@ -153,12 +155,10 @@ button {
    }
 
    button.learn-more:active{
-    transform: scale(0.9);
+    transform: scale(0.8);
    }
 
    button:hover:before, button:focus:before {
-    transition: 0.5s all ease;
-    left: 0;
     right: 0;
     opacity: 1;
   }
