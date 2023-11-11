@@ -1,0 +1,164 @@
+#s2 .fadeDiv h1{
+
+    margin-top: 10vh;
+}
+
+
+.projects{
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2,auto);
+    column-gap: 15px;
+    row-gap: 10px;
+    
+}
+.project{
+    height: 40vh;
+    width: 25vw;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+}
+
+.project::after{
+    content: '';
+    position: absolute;
+    left: 100%; 
+    top: 10%;
+    bottom: 10%;
+    width: 1px; 
+    background: white; 
+}
+
+.projectLine{
+    color: whitesmoke;
+}
+
+.project img{
+    height: 20vh;
+    width: auto;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+#reforesting::after{
+    display: none;
+}
+
+#UBCBotanicalGarden::after{
+    display: none;
+}
+
+.project h3{
+    font-family: 'Open Sans', sans-serif;
+    margin: 1vh;
+    font-size: larger;
+}
+.project p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 1vh;
+    font-size:medium;
+    text-align: justify;
+}
+
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: whitesmoke;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(var(--background),1);
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid rgba(var(--background),1);
+    border-right: 0.125rem solid rgba(var(--background),1);
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 2.85rem;
+    color: whitesmoke;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: rgba(var(--background),1);
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: rgba(var(--background),1);
+   }
+
+   button.learn-more:active{
+    transform: scale(0.9);
+   }
+
+   button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
