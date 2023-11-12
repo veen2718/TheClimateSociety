@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/projects-index.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/fade.js"></script>
     <script>
         $(window).scroll(function(){
     $(".fadeDiv").each(function(){
@@ -43,6 +42,9 @@
     });
 });
     </script>
+
+
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             
@@ -73,6 +75,8 @@
         }
         
     </script>
+
+
     <script>
         function scrollToPos(vh){
             console.log(vh)
@@ -80,6 +84,9 @@
             window.scrollTo(0,window.innerHeight*(vh/100))
         }
     </script>
+
+
+    
 </head>
 
 <body>
@@ -256,6 +263,7 @@
     <div class="main" id="s3"> 
         <div class="fadeDiv" id="fadeDivTeam">
             <h1> OUR TEAM</h1>
+
             <p class="pMain" id="pTeam">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. 
             </p>
@@ -365,7 +373,29 @@
             }).catch(error => console.error('Error:', error));
         });
     </script>
-
+    <script>
+        let projectButtons = document.getElementsByClassName("learn-more")
+        let projects = [
+            "bottle_drive",
+            "sign_protesting",
+            "reforesting",
+            "park_cleanups",
+            "invasive_species_pull",
+            "ubc_botanical_garden",
+        ]
+        let i = 0
+        console.log(projects)
+        console
+        for (let btn of projectButtons){
+            btn.onclick = function(){
+                location.href = `./projects/${item}`
+            }
+            let item = projects[i]
+            console.log(item,projects[i])
+                
+            i++
+        }
+    </script>
 
 
 </body>

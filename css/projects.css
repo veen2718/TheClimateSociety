@@ -1,0 +1,20 @@
+.header{
+    background-color: #b6edea;
+    width: 100vw;
+    height: 10vh!important;
+}
+
+.header img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 8vh;
+    width: 8vh;
+
+}
+
+
+
+.text{
+    color: beige;
+    font-family: 'Open Sans', sans-serif;
+}
