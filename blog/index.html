@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/vars.css">
     <link rel="stylesheet" href="../css/blog.css">
+    <html style="overflow-x: hidden;">
+    
 </head>
 
 <body>
@@ -21,4 +24,89 @@
         Blog
     </div>
     </div>
+
+
+
+
+
+    <div class="articles">
+
+
+        <div class="articleRow" id="row1">
+        <div class="article col1" id="r1c1">
+            <img src="../assets/blog/wildfires.jpg" alt="">
+            <h4>Wildfires</h4>
+            <h6>Our forests are burning down and nobody's doing anything about it</h6>
+        </div>
+
+        <div class="article col2" id="r1c2">
+            <img src="../assets/blog/wildfires.jpg" alt="">
+            <h4>Wildfires</h4>
+            <h6>Our forests are burning down and nobody's doing anything about it</h6>
+        </div>
+
+        <div class="article col3" id="r1c3">
+            <img src="../assets/blog/wildfires.jpg" alt="">
+            <h4>Wildfires</h4>
+            <h6>Our forests are burning down and nobody's doing anything about it</h6>
+        </div>
+
+        <div class="article col4" id="r1c4">
+            <img src="../assets/blog/wildfires.jpg" alt="">
+            <h4>Wildfires</h4>
+            <h6>Our forests are burning down and nobody's doing anything about it</h6>
+        </div>
+        </div>
+
+
+        <div class="articleRow" id="row2">
+        <div class="article col1" id="r2c1">
+            <img src="../assets/blog/wildfires.jpg" alt="">
+            <h4>Wildfires</h4>
+            <h6>Our forests are burning down and nobody's doing anything about it</h6>
+        </div>
+
+        <div class="article col2" id="r2c2">
+            <img src="../assets/blog/wildfires.jpg" alt="">
+            <h4>Wildfires</h4>
+            <h6>Our forests are burning down and nobody's doing anything about it</h6>
+        </div>
+
+        <div class="article col3" id="r2c3">
+            <img src="../assets/blog/wildfires.jpg" alt="">
+            <h4>Wildfires</h4>
+            <h6>Our forests are burning down and nobody's doing anything about it</h6>
+        </div>
+
+        <div class="article col4" id="r2c4">
+            <img src="../assets/blog/wildfires.jpg" alt="">
+            <h4>Wildfires</h4>
+            <h6>Our forests are burning down and nobody's doing anything about it</h6>
+        </div>
+        </div>
+
+    </div>
+    <script>
+        function resizeArticle(col,y,event){
+            var row = document.getElementById(y)
+            row.style.gridTemplateColumns = col
+        }
+        function resizeArticleDefault(y,event){
+            var row = document.getElementById(y)
+            row.style.gridTemplateColumns = `1fr 1fr 1fr 1fr`
+        }
+        xmax = 4
+        ymax = 2
+        for(let j = 0;j<2;j++){
+            for(let i = 0;i<4;i++){
+                var article = document.getElementById(`r${j+1}c${i+1}`)
+                widths = [1,1,1,1]
+                widths[i] = 1.2
+                gtc = `${widths[0]}fr ${widths[1]}fr ${widths[2]}fr ${widths[3]}fr`
+                article.addEventListener('mouseover',resizeArticle.bind(null,gtc,`row${j+1}`))
+                article.addEventListener('mouseout',resizeArticleDefault.bind(null,`row${j+1}`))
+            }
+        }
+    </script>
+    
 </body>
