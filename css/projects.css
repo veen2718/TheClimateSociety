@@ -2,7 +2,9 @@
     background-color: #b6edea;
     width: 100vw;
     height: 12vh;
-
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 0px;
 }
 
 .header img{
@@ -12,8 +14,37 @@
     width: 10vh;
     margin-left: 1vh;
     margin-top:1vh;
-
+    grid-column: 1;
+    justify-self: start;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.header img:hover{
+    height: 11vh;
+    width: 11vh;
+    margin-top:0.5vh;
+    margin-left: 0.5vh;
+}
+
+.headerText{
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    color: black;
+    height: 5vh;
+    margin-top: 3.5vh;
+}
+.headerText1{
+    grid-column: 2;
+    justify-self: end;
+    margin-left: 3vw;
+}
+.headerText2{
+    grid-column: 3;
+    justify-self: end;
+    margin-right: 3vw;
+}
+
 
 html, body{
     margin: 0;
