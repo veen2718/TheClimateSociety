@@ -1,0 +1,55 @@
+:root{
+    --TitleOutlineColor: 255,255,255;
+    --TitleOutlineOpacity1: 0.3;
+}
+
+head,body {
+    margin:0;
+}
+
+.mainImage{
+    width: 60vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.TitleText{
+    position: absolute;
+
+    font-size: 10vh;
+    font-weight: bold; /* Bold text to fill more space */
+    
+    
+    
+}
+
+.TitleClip{
+    color: transparent;
+    background-image: url('../assets/blogTitle.jpg');
+    -webkit-background-clip: text;
+    background-clip: text; 
+    display: inline-block;
+    background-size: 100%;
+
+    text-shadow: 
+        2px 2px 0 rgba(0, 100, 0, 0.2), 
+        -2px -2px 0 rgba(0, 100, 0, 0.2);
+    z-index: 2;
+}
+
+.TitleOutline{
+    color: transparent;
+    text-shadow: 
+    -2px 0 rgba(var(--TitleOutlineColor),var(--TitleOutlineOpacity1)),
+     0 2px rgba(var(--TitleOutlineColor),var(--TitleOutlineOpacity1)),
+     2px 0 rgba(var(--TitleOutlineColor),var(--TitleOutlineOpacity1)),
+     0 -2px rgba(var(--TitleOutlineColor),var(--TitleOutlineOpacity1));
+    z-index: 1;
+}
+
+.TitleContainer{
+    position: absolute;
+    top:30vh;
+    left:50vw;
+    display: inline-block;
+}

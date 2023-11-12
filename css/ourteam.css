@@ -8,6 +8,7 @@
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: auto;
+    gap:1vh
     
 }
 #fadeDivTeam{
@@ -29,13 +30,18 @@
 }
 
 .person-image{
-    height: 20vh;
+    height: 21vh;
     width: auto;
     overflow: hidden;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .person-image img{
+
     width: auto;
     height: 20vh;
+    box-shadow: 0 0 20px 5px rgba(var(--primary),0.5);
 }

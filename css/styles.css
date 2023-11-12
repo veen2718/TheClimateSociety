@@ -53,12 +53,22 @@ p{
 }
 
 .headerElement{
+    cursor: pointer;
     text-decoration: none;
     color: rgb(var(--text));
     font-family: 'Allerta','sans-serif';
     font-size: large;
-
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
 }
+
+.headerElement:hover{
+    box-shadow: 1px 1px 100px rgba(var(--primary), 0.75);
+}
+
+
+
+
 
 .visible {
     visibility: visible;
@@ -76,3 +86,4 @@ p{
     border-radius: 50%;
     object-fit: cover;
 }
+
