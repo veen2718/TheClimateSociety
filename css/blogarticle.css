@@ -1,0 +1,113 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+.header{
+    display: grid;
+    height:10vh;
+    background-color: #b6edea9f;
+    grid-template-columns: auto auto 1fr;
+}
+
+.homeButton {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    justify-self: end;
+    transition: all 0.45s cubic-bezier(0.48, 0, 0.12, 1);
+    align-self: center;
+    margin-top: 0;
+  }
+  
+  .arrow {
+    width: 1vw;
+    transition-duration: 0.3s;
+    z-index: 1;
+    stroke: white ;
+    stroke-width: 0.25vh;
+    transition: all 0.45s cubic-bezier(0.48, 0, 0.12, 1);
+  }
+  
+  .buttonText {
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    color: white;
+    font-size: 0;
+    opacity: 0;
+    position: absolute;
+    left: 60px;
+    transition: all 0.45s cubic-bezier(0.48, 0, 0.12, 1);
+  }
+  
+  .homeButton:hover {
+    width: 200px; 
+    border-radius: 50px;
+    background-color: rgb(var(--background2));
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  
+  .homeButton:hover .arrow {
+    transform: translateX(0);
+  }
+  
+  .homeButton:hover .buttonText {
+    display: block;
+    opacity: 1;
+    font-size: 16px;
+    transition-duration: 0.3s;
+  }
+
+.header img{
+    height:9vh;
+    width: 9vh;
+    object-fit: cover;
+    margin-top: 0.5vh;
+    margin-left: 0.5vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 40vw;
+
+    text-align: justify;
+}
+.image{
+    height: 50vh;
+    width:60vw;
+    object-fit: cover;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TCS{
+    color:black;
+    justify-self: start;
+    margin-left: 3vw;
+}
+
+.articleName{
+    color:black;
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+.author{
+    font-size:2.5vh;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1vh;
+    margin-bottom: 1vh;;
+}

@@ -25,6 +25,7 @@ head,body {
     margin-top:0.5vh;
     margin-left:1vw;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .mainImage{
@@ -108,7 +109,7 @@ head,body {
     width: auto;
     border: black 0.2vw solid;
     height: 45vh;
-    transition: width 0.3s ease-in;
+    transition: all 0.3s ease-in;
     padding-bottom: 1vh;
 }
 .article img{
@@ -142,6 +143,19 @@ head,body {
     max-height: 6vh;
 }
 
+
+.zoomedarticle{
+    position:fixed;
+    width: 95vw;
+    height: 95vh;
+    left:2.5vw;
+    top:2.5vh;
+    z-index:100;
+    transition: all 0.3s ease-in;
+
+    transform: scale(1);
+    background-color: white;
+}
 /*.article:hover{
     width:30vw;
 }*/

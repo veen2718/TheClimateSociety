@@ -6,26 +6,20 @@
     <meta http-equiv='pragma' content='no-cache'>
     
     <html style="overflow-x: hidden;"></html>
-    <link rel="stylesheet" href="css/vars.css">
-    <link rel="stylesheet" href="css/sections.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/slide.css">
-    <link rel="stylesheet" href="css/ourteam.css">
-    <link rel="stylesheet" href="css/projects-index.css">
+    <link rel="stylesheet" href="../css/vars.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/slide.css">
+    <link rel="stylesheet" href="../css/ourteam.css">
+    <link rel="stylesheet" href="../css/projects-index.css">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sections.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        function redirectIfMobile() {
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            if (isMobile) {
-                window.location.href = "./mobile";
-            }else{
-                console.log("On Computer")
-            }
-
-        }
-    </script>
     <script>
         $(window).scroll(function(){
     $(".fadeDiv").each(function(){
@@ -100,21 +94,20 @@
     
 </head>
 
-<body onload="redirectIfMobile()">
-    <div id="header"> 
-        <p class="headerElement" onclick="scrollToPos(0)">HOME</p>
-        <p class="headerElement" onclick="scrollToPos(100)">OUR PROJECTS</p>
-        <p class="headerElement" onclick="scrollToPos(200)">OUR TEAM</p>
-        <p class="headerElement" onclick="scrollToPos(280)">CONTACT US</p>
-        <a href="./blog"><p class="headerElement"> BLOG </p></a>
+<body>
+    <div class="header">
+        <img src="../assets/logo.jpeg" alt="">
+        <h1 class="title">THE CLIMATE SOCIETY</h1>
+        <div id="openSidebar">
+
+        </div>
+
     </div>
+
+
+
     <div class="main" id="s1">
         <div id="s1items" class="fadeDiv">
-
-
-        <img src="assets/logo.png" alt="logo" id="logo">   
-
-        <h1> THE CLIMATE SOCIETY </h1>
    
         <div id="slideItems">
             <p class="slideP" id="p1">
@@ -154,7 +147,7 @@
                     <h3>
                         Bottle Drive
                     </h3>
-                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="../assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -174,7 +167,7 @@
                     <h3>
                         Sign Protesting
                     </h3>
-                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="../assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -194,7 +187,7 @@
                     <h3>
                         Reforesting
                     </h3>
-                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="../assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -213,7 +206,7 @@
                     <h3>
                         Park Cleanups
                     </h3>
-                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="../assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -233,7 +226,7 @@
                     <h3>
                         Invasive Species Pull
                     </h3>
-                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="../assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -252,7 +245,7 @@
                     <h3>
                         UBC Botanical Garden
                     </h3>
-                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="../assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -282,42 +275,42 @@
             
             <div class="teamgrid">
                 <div class="person">
-                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="../assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Richard Wang</h4>
                     <h5 class="person-title">Co-Founder, Co-President</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="../assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Otavio Nunes</h4>
                     <h5 class="person-title">Co-Founder, Co-President</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="../assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Jayden Vo</h4>
                     <h5 class="person-title">Vice-President</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="assets/team/steven.JPG" alt=""></div>
+                    <div class="person-image"><img src="../assets/team/steven.JPG" alt=""></div>
                     <h4 class="person-name">Steven Wang</h4>
                     <h5 class="person-title">Events Director</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="assets/team/everett.jpeg" alt=""></div>
+                    <div class="person-image"><img src="../assets/team/everett.jpeg" alt=""></div>
                     <h4 class="person-name">Everett Andres</h4>
                     <h5 class="person-title">Outreach</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="../assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Cristian Eng</h4>
                     <h5 class="person-title">Marketing</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="../assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Praveen Mohadevan</h4>
                     <h5 class="person-title">Technology/Web Development</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="../assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Aryan Dudeja</h4>
                     <h5 class="person-title">Volunteer Coordinator</h5>
                 </div>

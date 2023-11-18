@@ -1,0 +1,23 @@
+.header{
+    width:100vw;
+    height: 6vh;
+    background-color: rgb(var(--background2));
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+}
+
+.header img{
+    height: 5vh;
+    width:5vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header .title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    margin-right: auto;
+    margin-left: auto;
+}
