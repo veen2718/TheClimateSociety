@@ -7,20 +7,20 @@
     
     <html style="overflow-x: hidden;"></html>
     <link rel="stylesheet" href="../css/vars.css">
-    <link rel="stylesheet" href="../css/sections.css">
+    <!--link rel="stylesheet" href="../css/sections.css">
     <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/slide.css">
     <link rel="stylesheet" href="../css/ourteam.css">
-    <link rel="stylesheet" href="../css/projects-index.css">
+    <link rel="stylesheet" href="../css/projects-index.css"-->
     
+    <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/sections.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
+    <!--script>
         $(window).scroll(function(){
     $(".fadeDiv").each(function(){
         var elementTop = $(this).offset().top;
@@ -46,16 +46,16 @@
         $(this).css("opacity", opacity);
     });
 });
-    </script>
+    </script-->
 
 
 
-    <script>
+    <!--script>
         document.addEventListener('DOMContentLoaded', function() {
             
             console.log('DOMContentLoaded')
             var items = document.getElementById("slideItems");
-            items.style.left = "90vw"
+            items.style.left = "110vw"
             for(let i = 1; i < 4;i++){
                 var circle = document.getElementById(`c${i}`);
                 circle.addEventListener('click', function(){
@@ -79,7 +79,7 @@
             circle1.style.fill = "transparent"
         }
         
-    </script>
+    </script-->
 
 
     <script>
@@ -97,9 +97,18 @@
 <body>
     <div class="header">
         <img src="../assets/logo.jpeg" alt="">
-        <h1 class="title">THE CLIMATE SOCIETY</h1>
+        <h1 class="title">THE CLIMATE <br> SOCIETY</h1>
         <div id="openSidebar">
-
+            <svg >
+                <!-- First Line -->
+                <line x1="10" y1="20" x2="90" y2="20" style="stroke:rgb(0,0,0);stroke-width:2" />
+              
+                <!-- Second Line -->
+                <line x1="10" y1="50" x2="90" y2="50" style="stroke:rgb(0,0,0);stroke-width:2" />
+              
+                <!-- Third Line -->
+                <line x1="10" y1="80" x2="90" y2="80" style="stroke:rgb(0,0,0);stroke-width:2" />
+              </svg>
         </div>
 
     </div>
@@ -107,38 +116,94 @@
 
 
     <div class="main" id="s1">
-        <div id="s1items" class="fadeDiv">
-   
-        <div id="slideItems">
-            <p class="slideP" id="p1">
-                Established in 2022, The Climate Society is a distinguished non-profit organization that recognizes climate change as an unparalleled environmental challenge necessitating immediate collective action. Our paramount objective is to cultivate a sustainable future for all by ameliorating the ramifications of climate change through the diligent application of education, unwavering advocacy, and decisive action. We ardently believe that climate change represents the defining challenge of our epoch, and we are unwaveringly committed to enabling individuals, communities, and governments to institute substantive measures for its resolution.
+       <div class="s1div">
+            <img src="../assets/logo.png" alt="">
+            <p>
+                Safeguarding Our Planet, 
+                <br>
+                Securing Our Future
             </p>
-            <p class="slideP" id="p2">
-                Our ultimate aim is to catalyze a global movement that not only comprehends the exigency of this crisis but also cooperatively strives to institute a healthier, more equitable, and sustainable world. In our capacity as an organization, we have proactively undertaken the task of addressing climate change by instituting The Climate Society. Functioning as an Environmental, Social, and Governance (ESG) consulting body, The Climate Society offers its expertise to enterprises across the globe, aiding them in identifying innovative environmental solutions to significantly curtail their carbon emissions. 
-            </p>
-            <p class="slideP" id="p3">
-                Our primary goal is to inspire businesses to embrace sustainable practices that not only redound to the benefit of the environment but also enhance their long-term financial outlook. By engaging with corporations spanning diverse sectors, our aspiration is to impel them to assume a pioneering role in the battle against climate change, thereby setting a salutary precedent for others to emulate. The Climate Society remains unwaveringly committed to the advancement of environmental sustainability and the pursuit of a future that is characterized by equity and sustainability for all. Through a judicious fusion of education, steadfast advocacy, and decisive action, we are diligently striving to diminish the impact of climate change and kindle a global movement that comprehends the urgency of the challenge before us. Through The Climate Society, our fervent hope is to inspire and embolden businesses worldwide to instate sustainable practices and actively partake in the collective endeavor to combat climate change. 
-            </p>
-        </div>
-        <div id="positionControl">
-            <svg id= "c1" width="30" height="35">
-                <circle id = "cc1" cx="15" cy="20" r="12"></circle>
-            </svg>
-            <svg id= "c2" width="30" height="35">
-                <circle id = "cc2" cx="15" cy="20" r="12"></circle>
-            </svg>
-            <svg id= "c3" width="30" height="35">
-                <circle id = "cc3" cx="15" cy="20" r="12"></circle>
-            </svg>
-        </div>
-        
+       </div>
     </div>
+    <div class="main" id="s2">
+        <div class="s2div">
+            <h1>
+                Our Projects
+            </h1>
+
+            <div class="project" id="bottleDrive">
+                <button>
+                    Bottle Drive
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="project" id="signProtesting">
+                <button>
+                    Sign Protesting
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="project" id="reforesting">
+                <button>
+                    reforesting
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="project" id="parkCleanups">
+                <button>
+                    Park Cleanups
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="project" id="invasiveSpeciesPull">
+                <button>
+                    Invasive Species Pull
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="project" id="UBCBotanicalGarden">
+                <button>
+                    UBC Botanical Garden
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="project" id="bottleDrive">
+                <button>
+                    Bottle Drive
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+           
+
+        </div>
+    </div>
+
+    <div class="main" id="s3">
+        <div class="s3div">
+            <h1>
+                Our Values
+            </h1>
+        </div>
     </div>
 
 
 
-    <div class="main" id="s2"> 
-        <div class="fadeDiv">
+    <!--div class="main" id="s2"> 
             <h1> OUR PROJECTS</h1>
             <hr class="projectLine">
 
@@ -263,9 +328,20 @@
 
             </div>
 
-        </div>
     </div>
-    <div class="main" id="s3"> 
+    <div class="main" id="s3">
+        <p id="p1">
+            Established in 2022, The Climate Society is a distinguished non-profit organization that recognizes climate change as an unparalleled environmental challenge necessitating immediate collective action. Our paramount objective is to cultivate a sustainable future for all by ameliorating the ramifications of climate change through the diligent application of education, unwavering advocacy, and decisive action. We ardently believe that climate change represents the defining challenge of our epoch, and we are unwaveringly committed to enabling individuals, communities, and governments to institute substantive measures for its resolution.
+        </p>
+        <p id="p2">
+            Our ultimate aim is to catalyze a global movement that not only comprehends the exigency of this crisis but also cooperatively strives to institute a healthier, more equitable, and sustainable world. In our capacity as an organization, we have proactively undertaken the task of addressing climate change by instituting The Climate Society. Functioning as an Environmental, Social, and Governance (ESG) consulting body, The Climate Society offers its expertise to enterprises across the globe, aiding them in identifying innovative environmental solutions to significantly curtail their carbon emissions. 
+        </p>
+        <p id="p3">
+            Our primary goal is to inspire businesses to embrace sustainable practices that not only redound to the benefit of the environment but also enhance their long-term financial outlook. By engaging with corporations spanning diverse sectors, our aspiration is to impel them to assume a pioneering role in the battle against climate change, thereby setting a salutary precedent for others to emulate. The Climate Society remains unwaveringly committed to the advancement of environmental sustainability and the pursuit of a future that is characterized by equity and sustainability for all. Through a judicious fusion of education, steadfast advocacy, and decisive action, we are diligently striving to diminish the impact of climate change and kindle a global movement that comprehends the urgency of the challenge before us. Through The Climate Society, our fervent hope is to inspire and embolden businesses worldwide to instate sustainable practices and actively partake in the collective endeavor to combat climate change. 
+        </p>
+
+    </div>
+    <div class="main" id="s4"> 
         <div class="fadeDiv" id="fadeDivTeam">
             <h1> OUR TEAM</h1>
 
@@ -318,7 +394,7 @@
         </div>
     </div>
 
-    <div class="main" id="s4"> 
+    <div class="main" id="s5"> 
         <div class="inputContainer">
             <h1> CONTACT US</h1>
             <form 
@@ -400,7 +476,7 @@
                 
             i++
         }
-    </script>
+    </script-->
 
 
 </body>

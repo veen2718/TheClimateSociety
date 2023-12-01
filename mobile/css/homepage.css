@@ -1,0 +1,26 @@
+.s1div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.s1div img{
+    height: 80vw;
+    width:80vw;
+    margin-top:1vh;
+    margin-left:1vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.s1div p{
+    color: rgb(var(--text));
+    font-size: 3vh;
+    text-align: center;
+}
+
+
+#s1{
+    width: 100vw;
+    background-color: rgba(var(--background),0.6);
+}

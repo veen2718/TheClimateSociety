@@ -1,3 +1,25 @@
+.main{
+    height: auto !important;
+}
+
 #s1{
-    margin-top:6vh;
+    margin-top:11vh;
+    display:flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#p1{
+    margin-top: 20vh;
+}
+
+#s3 p {
+    max-width:90vw;
+    color:black;
+    width: 90vw;
+    font-size:calc(1.1*(3vh + 1vw) / 2);
+    text-align: justify;
+    background-color: rgb(var(--mc1));
+    padding: calc(0.8*(3vh + 1vw) / 2);
+    border-radius: 10%;
 }

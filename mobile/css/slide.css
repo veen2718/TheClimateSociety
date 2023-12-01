@@ -6,18 +6,18 @@
 
 #slideItems{
     position: relative;
-    left: 90vw;
+    left: 110vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:20vw;
-    width: 240vw;
+    width: 310vw;
     overflow: visible;
     transition: left 0.5s ease-out;
 }
 
 .slideP{
-    max-width:80vw;
-    width: 60vw;
-    font-size:large;
+    max-width:90vw;
+    width: 90vw;
+    font-size:calc(1*(3vh + 1vw) / 2);
     text-align: justify;
 }

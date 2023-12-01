@@ -1,0 +1,6 @@
+.s3div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(var(--background),0.6);
+}
