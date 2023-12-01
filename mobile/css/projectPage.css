@@ -1,0 +1,9 @@
+.header{
+    width:100vw;
+    height: 11vh;
+    background-color: rgb(var(--background2));
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+}
