@@ -4,3 +4,7 @@
     align-items: center;
     background-color: rgba(var(--background),0.6);
 }
+
+.s3div h1{
+    font-size: xx-large;
+}
