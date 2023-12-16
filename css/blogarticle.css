@@ -9,6 +9,63 @@ html,body{
     grid-template-columns: auto auto 1fr;
 }
 
+.topSection{
+  background-color: #b6edeade;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  width: 100vw;
+  margin-bottom: 30vh;
+}
+
+.topSection h6{
+  margin-bottom: 20vh;
+}
+
+
+.topSection img{
+  position: absolute;
+  top: 50%; /* Adjusts the vertical start position of the image */
+  transform: translateY(-20vh);
+  height: 50vh;
+  width:60vw;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+
+.text{
+  font-family: 'Open Sans', sans-serif;
+  max-width: 40vw;
+
+  text-align: justify;
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TCS{
+  color:black;
+  justify-self: start;
+  margin-left: 3vw;
+}
+
+.articleName{
+  color:black;
+  font-size: 5vh;
+  margin-bottom: 2vh;
+}
+.author{
+  font-size:2.5vh;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 1vh;
+  margin-bottom: 1vh;;
+}
 .homeButton {
     width: 3vw;
     height: 3vw;
@@ -26,6 +83,7 @@ html,body{
     transition: all 0.45s cubic-bezier(0.48, 0, 0.12, 1);
     align-self: center;
     margin-top: 0;
+    margin-right: 5vw;
   }
   
   .arrow {
@@ -75,39 +133,4 @@ html,body{
     margin-left: 0.5vw;
     border-radius: 50%;
     cursor: pointer;
-}
-
-.text{
-    font-family: 'Open Sans', sans-serif;
-    max-width: 40vw;
-
-    text-align: justify;
-}
-.image{
-    height: 50vh;
-    width:60vw;
-    object-fit: cover;
-}
-.article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.TCS{
-    color:black;
-    justify-self: start;
-    margin-left: 3vw;
-}
-
-.articleName{
-    color:black;
-    font-size: 5vh;
-    margin-bottom: 2vh;
-}
-.author{
-    font-size:2.5vh;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 1vh;
-    margin-bottom: 1vh;;
 }
