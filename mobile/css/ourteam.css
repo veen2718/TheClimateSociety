@@ -48,8 +48,8 @@
 }
 
 .person-image img{
-
-    width: auto;
     height: 20vh;
+    object-fit: cover;
+    width: 13vh;
     box-shadow: 0 0 20px 5px rgba(var(--primary),0.5);
 }
