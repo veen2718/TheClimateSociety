@@ -54,16 +54,14 @@ html, body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 88vh;
 
 }
 
 .main{
 
-    background-color: rgba(var(--background),0.9);
-    height:88vh;
+    /* background-color: rgba(var(--background),0.9); */
     width:100vw;
-
+    height: auto;
     /*display: grid;
     align-items: center;
     grid-template-rows: 2fr 11fr 11fr;
@@ -93,7 +91,6 @@ html, body{
     color:white;
     align-self: center;
     max-width: 70vw;
-    max-height: 35vh;
     margin-top: 5vh;
 }
 
