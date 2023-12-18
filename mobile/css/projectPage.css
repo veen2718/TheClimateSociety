@@ -1,17 +1,18 @@
 .header{
     background-color: #b6edea;
     width: 100vw;
-    height: 12vh;
+    height: 10vh;
     display: grid;
     grid-template-columns: auto auto 1fr;
+    vertical-align: center;
     gap: 0px;
 }
 
 .header img{
     border-radius: 50%;
     object-fit: cover;
-    height: 10vh;
-    width: 10vh;
+    height: 8vh;
+    width: 8vh;
     margin-left: 1vh;
     margin-top:1vh;
     grid-column: 1;
@@ -19,14 +20,6 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-.header img:hover{
-    height: 11vh;
-    width: 11vh;
-    margin-top:0.5vh;
-    margin-left: 0.5vh;
-}
-
 .headerText{
     font-family: 'Open Sans', sans-serif;
     font-size: xx-large;
@@ -49,7 +42,7 @@
 html, body{
     margin: 0;
 }
-.bg{
+.html,body{
     background-image:url("../../assets/projects.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -92,6 +85,7 @@ html, body{
     align-self: center;
     max-width: 70vw;
     margin-top: 5vh;
+    font-size:x-large;
 }
 
 h1{
