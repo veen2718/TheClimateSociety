@@ -107,11 +107,13 @@ p{
 
 .textHeader{
     font-size:5vh;
+    text-shadow: 2px 2px 4px #000000
 }
 
 .textText{
     font-size: 2vh;
     text-align: justify;
+    text-shadow: 2px 2px 4px #000000
 }
 
 .sectionImage{
