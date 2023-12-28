@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
     
     <html style="overflow-x: hidden;"></html>
     <link rel="stylesheet" href="css/vars.css">
-    <link rel="stylesheet" href="css/sections.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/ourteam.css">
-    <link rel="stylesheet" href="css/projects-index.css">
+    <link rel="stylesheet" href="css/projects-index.css"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -27,7 +29,7 @@
 
         }
     </script>
-    <script>
+    <!-- <script>
         $(window).scroll(function(){
     $(".fadeDiv").each(function(){
         var elementTop = $(this).offset().top;
@@ -53,7 +55,7 @@
         $(this).css("opacity", opacity);
     });
 });
-    </script>
+    </script> -->
 
 
 
@@ -102,7 +104,50 @@
 </head>
 
 <body onload="redirectIfMobile()">
-    <div id="header"> 
+
+    <div class="main">
+        <div class="mainImage">
+            <img src="assets/logoclear.png" alt="logo" id="logo">
+        </div>
+        <div class="mainTitleContainer">
+            <p class="mainTitle">
+                The Climate Society
+            </p>
+        </div>
+        
+        <div class="mainSection" id="ourProjects">
+            <div class="sectionText" id="projectText">
+                <p class="textHeader">
+                    Our Projects!
+                </p>
+                <p class="textText">
+                    Our projects encompass a range of environmental initiatives: organizing community recycling drives, participating in awareness-raising protests, reforesting local areas, cleaning and maintaining parks, managing invasive species, and collaborating with botanical experts. Each activity contributes significantly to environmental conservation and the fight against climate change.
+                </p>
+
+                <button class="mainButton">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> 
+                    Check out Our Projects!
+                </button>
+
+
+            </div>
+
+            <div class="sectionOther">
+                <div class="sectionImage">
+                    <img src="assets/events/bottledrive.jpg" alt="">
+                </div>
+
+            </div>
+            
+        </div>
+        
+       
+    </div>
+
+
+
+
+    <!-- <div id="header"> 
         <p class="headerElement" onclick="scrollToPos(0)">HOME</p>
         <p class="headerElement" onclick="scrollToPos(100)">OUR PROJECTS</p>
         <p class="headerElement" onclick="scrollToPos(200)">OUR TEAM</p>
@@ -112,8 +157,7 @@
     <div class="main" id="s1">
         <div id="s1items" class="fadeDiv">
 
-
-        <img src="assets/logo.png" alt="logo" id="logo">   
+            
 
         <h1> THE CLIMATE SOCIETY </h1>
    
@@ -141,8 +185,6 @@
         </div>
         
     </div>
-    <script src="https://climateclock.world/widget-v2.js" async></script>
-<climate-clock />
     </div>
 
 
@@ -157,7 +199,7 @@
                     <h3>
                         Bottle Drive
                     </h3>
-                    <div class="image"><img src="./assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -177,7 +219,7 @@
                     <h3>
                         Sign Protesting
                     </h3>
-                    <div class="image"><img src="./assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -197,7 +239,7 @@
                     <h3>
                         Reforesting
                     </h3>
-                    <div class="image"><img src="./assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -216,7 +258,7 @@
                     <h3>
                         Park Cleanups
                     </h3>
-                    <div class="image"><img src="./assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -236,7 +278,7 @@
                     <h3>
                         Invasive Species Pull
                     </h3>
-                    <div class="image"><img src="./assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -255,7 +297,7 @@
                     <h3>
                         UBC Botanical Garden
                     </h3>
-                    <div class="image"><img src="./assets/events/bottledrive.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/events/bottledrive.jpg" alt=""></div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nulla unde? Blanditiis hic aperiam ipsa veritatis
                     </p>
@@ -285,42 +327,42 @@
             
             <div class="teamgrid">
                 <div class="person">
-                    <div class="person-image"><img src="./assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Richard Wang</h4>
                     <h5 class="person-title">Co-Founder, Co-President</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="./assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Otavio Nunes</h4>
                     <h5 class="person-title">Co-Founder, Co-President</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="./assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Jayden Vo</h4>
                     <h5 class="person-title">Vice-President</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="./assets/team/steven.JPG" alt=""></div>
+                    <div class="person-image"><img src="assets/team/steven.JPG" alt=""></div>
                     <h4 class="person-name">Steven Wang</h4>
                     <h5 class="person-title">Events Director</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="./assets/team/everett.jpeg" alt=""></div>
+                    <div class="person-image"><img src="assets/team/everett.jpeg" alt=""></div>
                     <h4 class="person-name">Everett Andres</h4>
                     <h5 class="person-title">Outreach</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="./assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Cristian Eng</h4>
                     <h5 class="person-title">Marketing</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="./assets/team/template.jpg" alt=""></div>
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Praveen Mohadevan</h4>
                     <h5 class="person-title">Technology/Web Development</h5>
                 </div>
                 <div class="person">
-                    <div class="person-image"><img src="./assets/team/aryan.jpeg" alt=""></div>
+                    <div class="person-image"><img src="assets/team/template.jpg" alt=""></div>
                     <h4 class="person-name">Aryan Dudeja</h4>
                     <h5 class="person-title">Volunteer Coordinator</h5>
                 </div>
@@ -349,17 +391,11 @@
                   </button>
             </form>
         </div>
-    </div>
-    <div class="main">
-        <!-- <style>.climate-clock{position:relative;padding-bottom:120%;height:0;overflow:hidden;max-width:100%;}.climate-clock iframe{position:absolute;top:0;left:0;width:100%;height:100%;}@media(min-width:700px){.climate-clock{padding-bottom:56.25%;}}</style> -->
-        <!-- <div class='climate-clock'><iframe src='//embed.climateclock.net?buttons=1&audio=0' style='border:0'></iframe></div> -->
-        <script src="https://climateclock.world/widget-v2.js" async></script>
-<climate-clock />
-    </div>
+    </div> -->
 
 
 
-    <script>
+    <!-- <script>
         document.getElementById('responseForm').addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent the default form submission
     
@@ -416,7 +452,7 @@
                 
             i++
         }
-    </script>
+    </script> -->
 
 
 </body>
