@@ -7,6 +7,10 @@
     --background: 7, 22, 34;
 
     --mc1: 113, 239, 197;
+
+
+    --unit1: calc(1vw + 2vh);
+    --unit2: calc(2vw + 4vh);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Allerta:700|Open Sans:400');

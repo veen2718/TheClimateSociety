@@ -1,0 +1,27 @@
+
+
+/* top = 20vh */
+.mainImage{ 
+    margin-top:20vh;
+    margin-bottom: 5vh;
+    width: 30vh;
+    height:30vh;
+}
+/* bottom = 50vh */
+
+
+/* top = 55vh */
+.mainTitleContainer{
+    height:20vh;
+}
+/* bottom=25vh */
+
+
+/* top = 100vh */
+#ourProjects{
+    margin-top: 25vh;
+    height:50vh;
+    max-height: 50vh;
+    margin-bottom: 15vh;
+}
+/* bottom = 150vh */
