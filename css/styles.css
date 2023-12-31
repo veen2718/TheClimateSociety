@@ -12,6 +12,7 @@ body {
     font-family: 'Open Sans';
     font-weight: 400;
     height: auto;
+    transition: background-image 0.3s ease-in-out;
 }
 
 p{
@@ -104,12 +105,12 @@ p{
 }
 
 .textHeader{
-    font-size:5vh;
+    font-size:calc(3vh + 1.5vw);
     text-shadow: 2px 2px 4px #000000
 }
 
 .textText{
-    font-size: 2vh;
+    font-size: calc(0.95vh + 0.45vw);
     text-align: justify;
     text-shadow: 2px 2px 4px #000000
 }

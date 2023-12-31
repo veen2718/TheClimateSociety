@@ -25,3 +25,16 @@
     margin-bottom: 15vh;
 }
 /* bottom = 150vh */
+
+/* top = 165vh */
+#ourTeam{
+    height:50vh;
+    max-height: 50vh;
+}
+/* bottom = 215vh */
+
+
+.clock{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}

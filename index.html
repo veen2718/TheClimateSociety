@@ -6,11 +6,16 @@
     <meta http-equiv='pragma' content='no-cache'>
     
     <html style="overflow-x: hidden;"></html>
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
+
+
     <link rel="stylesheet" href="css/vars.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/structure.css">
-
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/background.css">
 
 
 
@@ -112,6 +117,10 @@
 </head>
 
 <body onload="redirectIfMobile()">
+    <script src="/js/countdown.js"> </script>
+    <script src="js/transitionBackground.js"></script>
+    <div id="background1" class="background-image" style="background-image: url('assets/home.jpg');"></div>
+    <div id="background2" class="background-image" style="background-image: url('assets/home_burning2.jpg');"></div>
 
     <div class="main">
         <div class="mainImage">
@@ -168,6 +177,60 @@
                     </p>
                     
                 </button>
+            </div>
+        </div>
+        
+        
+        
+        <div class="clock" id="Clock">
+            <div class="clockHeader"> 
+                <p id="clockHeaderText">
+                    TIME LEFT TO LIMIT GLOBAL WARMING TO 1.5 C
+                </p>
+            </div>
+            <div class="clockRow">
+                <div class="clockObject Row1Object">
+                    <p class="clockTime" id="countdown0">
+                        5
+                    </p>
+                    <p class="clockLabel">
+                        YRS
+                    </p>
+                </div>
+                <div class="clockObject Row1Object">
+                    <p class="clockTime" id="countdown1">
+                        153
+                    </p>
+                    <p class="clockLabel">
+                        DAYS
+                    </p>
+                </div>
+            </div>
+            <div class="clockRow">
+                <div class="clockObject Row2Object">
+                    <p class="clockTime" id="countdown2">
+                        7
+                    </p>
+                    <p class="clockLabel">
+                        HRS
+                    </p>
+                </div>
+                <div class="clockObject Row2Object">
+                    <p class="clockTime" id="countdown3">
+                        5
+                    </p>
+                    <p class="clockLabel">
+                        MIN
+                    </p>
+                </div>
+                <div class="clockObject Row2Object">
+                    <p class="clockTime" id="countdown4">
+                        32
+                    </p>
+                    <p class="clockLabel">
+                        SEC
+                    </p>
+                </div>
             </div>
         </div>
 
