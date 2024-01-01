@@ -8,7 +8,7 @@
     <html style="overflow-x: hidden;"></html>
 
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
     <link rel="stylesheet" href="css/vars.css">
     <link rel="stylesheet" href="css/buttons.css">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/ourteam.css">
     <link rel="stylesheet" href="css/projects-index.css"> -->
-
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script id="textFitLib" src="textFit.slow.js"></script>
 
@@ -121,10 +121,10 @@
     <script src="js/transitionBackground.js"></script>
 
 
-    <div class="main1">
+    <div class="main" id="main1">
         <div id="background1" class="background-image" style="background-image: url('assets/home.jpg');"></div>
         <div id="background2" class="background-image" style="background-image: url('assets/home_burning2.jpg');"></div>
-        <div class="mainImage fadeIn">
+        <div class="mainImage fadeIn fadeIn1">
             <img src="assets/logoclear.png" alt="logo" id="logo">
         </div>
         <div class="mainTitleContainer fadeIn">
@@ -134,21 +134,21 @@
         </div>
         
 
-        <div class="mainSection fadeIn" id="ourProjects">
+        <div class="mainSection fadeIn  fadeIn1" id="ourProjects">
             <div class="sectionText" id="projectText">
-                <p class="textHeader">
+                <p class="textHeader fadeIn">
                     Our Projects!
                 </p>
-                <p class="textText">
+                <p class="textText fadeIn">
                     Our projects encompass a range of environmental initiatives: organizing community recycling drives, participating in awareness-raising protests, reforesting local areas, cleaning and maintaining parks, managing invasive species, and collaborating with botanical experts. Each activity contributes significantly to environmental conservation and the fight against climate change.
                 </p>
-                <button class="mainButton">
+                <button class="mainButton fadeIn fadeIn1">
                     <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> 
                     <p>Check out Our Projects!</p> 
                 </button>
             </div>
             <div class="sectionOther">
-                <div class="sectionImage">
+                <div class="sectionImage fadeIn fadeIn1">
                     <img src="assets/events/bottledrive.jpg" alt="">
                 </div>
             </div>
@@ -183,7 +183,7 @@
         
         
         
-        <div class="clock fadeIn" id="Clock">
+        <div class="clock fadeIn fadeIn1" id="Clock">
             <div class="clockHeader"> 
                 <p id="clockHeaderText">
                     TIME LEFT TO LIMIT GLOBAL WARMING TO 1.5 C
@@ -237,58 +237,46 @@
 
 
     </div>
-    <div class="main2">
-        <div class="clock fadeIn" id="Clock">
-            <div class="clockHeader"> 
-                <p id="clockHeaderText">
-                    TIME LEFT TO LIMIT GLOBAL WARMING TO 1.5 C
+    <div class="main" id="main2">
+        <div class="mainSection2" id="ourMission">
+            <div class="fadeIn fadeIn2">
+                <p class="main2Header">
+                    Our Mission
+                </p>
+                <p class="main2Text">
+                    At the Climate Society, our dedication to addressing the dire situation of our planet's changing climate is both deeply personal and critically important. We are acutely aware of the severity of the climate crisis and its devastating impacts, and this knowledge fuels our commitment to action. The current state of the climate is alarming; rising global temperatures, melting ice caps, extreme weather events, and declining biodiversity are just a few of the stark realities we face.
                 </p>
             </div>
-            <div class="clockRow">
-                <div class="clockObject Row1Object">
-                    <p class="clockTime" id="countdown0">
-                        5
-                    </p>
-                    <p class="clockLabel">
-                        YRS
-                    </p>
-                </div>
-                <div class="clockObject Row1Object">
-                    <p class="clockTime" id="countdown1">
-                        153
-                    </p>
-                    <p class="clockLabel">
-                        DAYS
-                    </p>
-                </div>
-            </div>
-            <div class="clockRow">
-                <div class="clockObject Row2Object">
-                    <p class="clockTime" id="countdown2">
-                        7
-                    </p>
-                    <p class="clockLabel">
-                        HRS
-                    </p>
-                </div>
-                <div class="clockObject Row2Object">
-                    <p class="clockTime" id="countdown3">
-                        5
-                    </p>
-                    <p class="clockLabel">
-                        MIN
-                    </p>
-                </div>
-                <div class="clockObject Row2Object">
-                    <p class="clockTime" id="countdown4">
-                        32
-                    </p>
-                    <p class="clockLabel">
-                        SEC
-                    </p>
-                </div>
-            </div>
+            <img src="assets/mission.jpg" class="main2Image fadeIn fadeIn3"alt="">
         </div>
+
+        <div class="mainSection2">
+            <img src="assets/vision.jpg" class="main2Image fadeIn fadeIn2"alt="">
+            <div class="fadeIn fadeIn3">
+                <p class="main2Header">
+                    Vision for the future.
+                </p>
+                <p class="main2Text">
+                    The Climate Society envisions a sustainable future where environmental stewardship and sustainable practices are paramount. Our goal is to proactively create a healthier planet, emphasizing clean energy accessibility, ecosystem preservation, and community resilience to environmental changes. We strive for a world where future generations coexist harmoniously with nature, enjoying a balanced and rejuvenated Earth.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="mainSection2">
+            <div class="fadeIn fadeIn2">
+                <p class="main2Header">
+                    Community Empowerment
+                </p>
+                <p class="main2Text">
+                    At The Climate Society, community involvement is key. We empower individuals and groups to actively participate in environmental conservation. Our initiatives include educational workshops, sustainable living projects, and biodiversity enhancement programs. By uniting communities, we foster a shared commitment to tangible, eco-friendly changes.
+                </p>
+            </div>
+            <img src="assets/community.jpg" class="main2Image fadeIn fadeIn3" alt="">
+        </div>
+
+        
+
     </div>
     <script src="js/fadeInObjects.js"></script>
 

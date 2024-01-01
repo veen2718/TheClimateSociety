@@ -1,10 +1,30 @@
 .fadeIn{
+    
+    transition: all 0.5s cubic-bezier(0.25, -0.5, 0.75, 1.5);
+    
+}
+
+.fadeIn1{
     opacity:0;
-    transition: all 0.5s ease-in-out;
     transform: translateY(-0.5vh);
 }
+
+
+.fadeIn2{
+    opacity:0;
+    transform: translateX(-2vw)
+}
+
+.fadeIn3{
+    opacity:0;
+    transform: translateX(2vw)
+}
+
+
+
 
 .visible{
     opacity: 1;
     transform: translateY(0);
+    transform: translateX(0);
 }
