@@ -3,7 +3,7 @@ html {
   }
 
 body {
-    background-image: url('/assets/home.jpg');
+    /* background-image: url('/assets/home.jpg'); */
     background-attachment: fixed;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ p{
 
 }
 
-.main {
+.main1 {
     width: 100vw;
     text-align: center ;
     margin:0;
