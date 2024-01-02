@@ -17,6 +17,203 @@
         <p class="title">
             Our Team
         </p>
-        <img src="../assets/logo.png" alt="">
+        <img src="../assets/logo.png" alt="" class="logo">
     </div>
+
+    <div class="teamDiv">
+    <div class="team">
+
+
+        <div class="teamRow">
+        <div class="member">
+            <img src="../assets/team/template.jpg" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Richard Wang
+                </p>
+                <p class="role">
+                    Co-Founder, Co-President
+                </p>
+            </div>
+
+            <div class="bio">
+                <p class="bioText">
+                    As a Co-Founder and Co-President of The Climate Society, I am deeply committed to fostering sustainable solutions for our planet. My journey in environmental activism has shaped my approach to leading our organization, emphasizing collaborative and innovative approaches to tackle climate change.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="member">
+            <img src="../assets/team/template.jpg" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Otavio Nunes
+                </p>
+                <p class="role">
+                    Co-Founder, Co-President
+                </p>
+            </div>
+            <div class="bio">
+                <p class="bioText">
+                    In my role as Co-Founder and Co-President, I bring a passion for environmental justice and community engagement. My focus lies in building strong partnerships and advocating for policies that support a greener future. I believe in empowering communities to take active roles in environmental stewardship.
+                </p>
+            </div>
+        </div>
+    
+        <div class="member">
+            <img src="../assets/team/template.jpg" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Jayden Vo
+                </p>
+                <p class="role">
+                    Vice-President
+                </p>
+            </div>
+            <div class="bio">
+                <p class="bioText">
+                    As the Vice-President of The Climate Society, my goal is to support our mission through strategic planning and effective leadership. With a background in environmental policy, I am dedicated to bridging the gap between advocacy and actionable change, ensuring our efforts leave a lasting impact on the environment.
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <div class="teamRow">
+        <div class="member">
+            <img src="../assets/team/steven.JPG" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Steven Wang
+                </p>
+                <p class="role">
+                    Events Director
+                </p>
+            </div>
+            <div class="bio">
+                <p class="bioText">
+                    Leading as the Events Director, I am responsible for organizing impactful and informative events that raise awareness about climate issues. My passion lies in creating engaging platforms where individuals and communities can come together to discuss and act on environmental challenges.
+                </p>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="../assets/team/template.jpg" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Praveen Mohadevan
+                </p>
+                <p class="role">
+                    Technology/Web Developer
+                </p>
+            </div>
+            <div class="bio">
+                <p class="bioText">
+                    As the Technology and Web Developer for our organization, I focus on leveraging technology to advance our environmental goals. My work involves developing user-friendly digital tools and platforms that facilitate awareness, education, and action on climate change issues.
+                </p>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="../assets/team/everett.jpeg" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Everett Andres
+                </p>
+                <p class="role">
+                    Outreach
+                </p>
+            </div>
+            <div class="bio">
+                <p class="bioText">
+                    In my role as Outreach Coordinator, I am dedicated to expanding our network and engaging diverse groups in environmental advocacy. My efforts are focused on building relationships and collaborations that amplify our message and mobilize collective action for the planet.
+                </p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="teamRow">
+        <div class="member">
+            <img src="../assets/team/template.jpg" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Cristian Eng
+                </p>
+                <p class="role">
+                    Marketing
+                </p>
+            </div>
+            <div class="bio">
+                <p class="bioText">
+                    As the Marketing Specialist, my objective is to craft compelling narratives that resonate with our audience. Through innovative marketing strategies, I aim to highlight the urgency of climate action and the impactful work of our organization, inspiring others to join our cause.
+                </p>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="../assets/team/aryan.jpeg" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Aryan Dudeja
+                </p>
+                <p class="role">
+                    Volunteer Coordinator
+                </p>
+            </div>
+            <div class="bio">
+                <p class="bioText">
+                    I serve as the Volunteer Coordinator, where I am passionate about mobilizing volunteers to participate in our environmental initiatives. My role involves creating meaningful volunteer opportunities that not only contribute to our mission but also empower individuals to become active environmental advocates.
+                </p>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="../assets/team/template.jpg" alt="" class="picture">
+
+            <div class="info">
+                <p class="name">
+                    Andrew Ding
+                </p>
+                <p class="role">
+                    Management
+                </p>
+            </div>
+            <div class="bio">
+                <p class="bioText">
+                    In my management role, I focus on ensuring that our organization operates efficiently and effectively in its quest to address environmental issues. My responsibilities include overseeing daily operations, ensuring team collaboration, and aligning our efforts with our core mission of environmental sustainability.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    <script>
+        const members = document.querySelectorAll('.member')
+        members.forEach(member => {
+            member.addEventListener('click', function() {
+                members.forEach(member1 => {
+                    if(member1 !== member){
+                        member1.classList.remove('clicked')
+                    }
+                })
+            this.classList.toggle('clicked') 
+            })
+            
+        })
+        
+
+    </script>
+
 </body>
