@@ -1,0 +1,18 @@
+body{
+    background: #3D3846;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    color: #86FFA8;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
