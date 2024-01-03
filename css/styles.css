@@ -166,3 +166,52 @@ p{
     object-fit: cover;
 
 }
+
+
+.threeWaysOuterDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.threeWays{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    
+}
+
+.way{
+    width: 17;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.way img{
+    border-radius: calc(2vh + 1vw);
+    height:35vw;
+    width:20vw;
+    border: calc(1vh + .5vw) solid #2E2A2A;
+    object-fit: cover;
+    /* background: lightgray 50% / cover no-repeat; */
+    box-shadow: calc(1vh + .5vw) calc(1vh + .5vw) calc(3vh + 1.5vw) 0px #121111, calc(-1vh - .5vw) calc(-1vh - .5vw) calc(3vh + 1.5vw) 0px #434A44;
+}
+
+.wayHeader{
+    color: #86FFA8;
+    text-align: center;
+    font-family: Inter;
+    font-size: calc(2vh + 0.5vw);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    max-width: 20vw;
+}
+
+.wayText{
+    max-width: 20vw;
+}
