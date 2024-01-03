@@ -41,6 +41,8 @@ html,body{
   max-width: 40vw;
 
   text-align: justify;
+  display: flex;
+  flex-direction: column;
 }
 
 .article{
@@ -133,4 +135,13 @@ html,body{
     margin-left: 0.5vw;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.text img{
+  align-self: center;
+}
+
+.bibliography{
+  font-family: 'Open Sans', sans-serif;
+  max-width: 65vw;
 }
