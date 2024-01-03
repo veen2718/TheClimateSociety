@@ -1,0 +1,211 @@
+body{
+    background: #3D3846;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+
+.title{
+    color: #86FFA8;
+    text-align: justify;
+    font-family: Inter;
+    font-size: calc(5vh + 2.5vw);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.logo{
+    height:13vh;
+    width:13vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right:3vw;
+    transition: all 0.3s cubic-bezier(0, 0.5, 0.5,1);
+    cursor: pointer;
+}
+
+
+.teamDiv{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80vw;
+    gap: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamRow{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.member{
+    display: flex;
+    height: 45vh;
+    width:18vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3vh;
+
+    border-radius: calc(0.5vh + 0.25vw);
+    background: #413C4B;
+
+    box-shadow: 
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1) inset, 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1) inset,
+        0px 0px 0px 0px rgba(0, 0, 0, 0), 
+        0px 0px 0px 0px rgba(88, 81, 102, 0);
+
+    transition: width 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+
+
+
+}
+
+.member:hover{
+    box-shadow: 
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 0) inset, 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 0) inset,
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1), 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1);
+}
+
+
+
+.picture{
+    height: 25vh;
+    width: 10vw;
+    object-fit: cover;
+    border-radius: calc(1vh + 0.5vw);
+    margin:0;
+}
+
+.info{
+    display: flex;
+    width: 15vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin:0;
+    padding:0;
+    border-radius: calc(0.5vh + 0.25vw);
+    background: #413C4B;
+    /* box-shadow: calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px #000 inset, calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px #585166 inset; */
+    height: 10vh;
+    box-shadow: 
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1) inset, 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1) inset;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.member:hover .info{
+    box-shadow: 
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 0) inset, 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 0) inset,
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1), 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1);
+}
+
+
+
+.member.clicked{
+    width: 30vw;
+    height: 70vh;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.name{
+    color: #FFF;
+    font-family: Inter;
+    font-size: calc(1.25vh + .75vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0;
+    text-align: center;
+}
+
+.role{
+    color: #FFF;
+    font-family: Inter;
+    font-size: calc(.8vh + .5vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0;
+    text-align: center;
+}
+
+
+.member:hover .bio{
+    box-shadow: 
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 0) inset, 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 0) inset,
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1), 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1);
+}
+
+.bio{
+    height:0vh;
+    width:18vw;
+    transition: all 0.3s ease-in-out;
+    border-radius: calc(0.5vh + 0.25vw);
+    box-shadow: 
+        calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1) inset, 
+        calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1) inset;
+    
+}
+
+.bioText{
+    font-size: 0px;
+    color: white;
+    font-family: Inter;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.member.clicked .bio{
+    height: 20vh;
+    width: 23vw;
+    padding: 1vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.member.clicked .bioText{
+    font-size: calc(.8vh + .5vw);
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover{
+    height: 15vh;
+    width: 15vh;
+}
