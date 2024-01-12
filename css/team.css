@@ -79,7 +79,7 @@ body{
         0px 0px 0px 0px rgba(0, 0, 0, 0), 
         0px 0px 0px 0px rgba(88, 81, 102, 0);
 
-    transition: width 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     transition: box-shadow 0.3s ease;
     cursor: pointer;
 
@@ -182,6 +182,7 @@ body{
     box-shadow: 
         calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1) inset, 
         calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1) inset;
+    opacity: 0;
     
 }
 
@@ -189,7 +190,7 @@ body{
     font-size: 0px;
     color: white;
     font-family: Inter;
-
+    opacity: 0;
     transition: all 0.3s ease-in-out;
 }
 
@@ -198,6 +199,7 @@ body{
     width: 23vw;
     padding: 1vw;
     transition: all 0.3s ease-in-out;
+    opacity: 1;
 }
 
 .member.clicked .bioText{
@@ -205,6 +207,7 @@ body{
     transition: all 0.3s ease-in-out;
     margin: 0;
     padding: 0;
+    opacity: 1;
 }
 
 .logo:hover{
