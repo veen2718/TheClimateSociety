@@ -34,13 +34,13 @@
 }
 
 #arrow1{
-    margin-left:24vw;
+    margin-left:26vw;
 }
 #arrow2{
-    margin-right:24vw;
+    margin-right:26vw;
 }
 
-.focused{
+#slide2{
     width: 40vw;
     height:35vh;
 }
@@ -57,7 +57,9 @@
 
 .slideItem{
     object-fit: cover;
-    transition:all 0.3s ease-in-out;
+    transition:all 0.2s ease-in-out;
+    width:20vw;
+    height: 20vh;
 }
 
 .slideshowItems{
