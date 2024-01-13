@@ -57,14 +57,14 @@ p{
 }
 
 .mainTitle{
-    font-size: 4vw;
+    font-size: 7vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    margin-top: 4vh;
+    /* margin-top: 4vh; */
 }
 
 .mainTitleContainer{

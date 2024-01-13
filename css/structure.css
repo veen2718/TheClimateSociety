@@ -1,25 +1,33 @@
 
 
-/* top = 20vh */
+/* top = 5vh */
 .mainImage{ 
-    margin-top:-180vh;
+    margin-top:-195vh;
     margin-bottom: 5vh;
     width: 30vh;
     height:30vh;
 }
-/* bottom = 50vh */
+/* bottom = 35vh */
 
 
-/* top = 55vh */
+/* top = 40vh */
 .mainTitleContainer{
-    height:20vh;
+    height:11vh;
 }
-/* bottom=25vh */
+/* bottom=51vh */
+
+/* top=55vh */
+.slideshow{
+    margin-top:4vh;
+    height: 40vh;
+}
+/* bottom=95vh */
+
 
 
 /* top = 100vh */
 #ourProjects{
-    margin-top: 25vh;
+    margin-top: 5vh;
     height:50vh;
     max-height: 50vh;
     margin-bottom: 15vh;
