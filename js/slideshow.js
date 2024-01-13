@@ -56,103 +56,74 @@ function AnimateRight(){
     })
 }
 
-function fixMoveRight(){
+function fixMove(){
     const container = document.getElementById('slideShowItems')
     let slideShowItems = container.querySelectorAll('.slideItem')
     container.style.transition = 'none'
     slideShowItems.forEach( item =>{
         item.style.transition = 'none'
     })
+    
 
+    
+
+}
+
+function fixRight(){
+    fixMove()
+    const container = document.getElementById('slideShowItems')
     const lastItem = container.lastElementChild
     const firstItem = container.firstElementChild
     container.style.marginLeft = '0'
 
     container.insertBefore(lastItem, firstItem)
-
 }
+
+function fixLeft(){
+    fixMove()
+    const container = document.getElementById('slideShowItems')
+    const lastItem = container.lastElementChild
+    const firstItem = container.firstElementChild
+    container.style.marginLeft = '0'
+
+    container.appendChild(firstItem)
+}
+
+
 
 function moveRight(){
     console.log("moved right")
     
-    AnimateRight().then(fixMoveRight)
+    AnimateRight().then(fixRight)
     
 }
 
+function moveLeft(){
+    console.log("moved left")
+    AnimateLeft().then(fixLeft)
+}
 
-function oldFuncs(){
-    function moveSlideshowRight(){
-        console.log("moveSlideshowRight")
-        const slideShowItemsDiv = document.getElementById('slideShowItems');
+
+function AnimateLeft(){
+    return new Promise((resolve, reject) => {
+        const container = document.getElementById('slideShowItems')
+        let slideShowItems = container.querySelectorAll('.slideItem')
         
-        const lastItem = slideShowItemsDiv.lastElementChild
-        const firstItem = slideShowItemsDiv.firstElementChild
+        container.style.transition = 'all 0.2s ease-in-out'
 
-        // slideShowItemsDiv.insertBefore(lastItem,firstItem);
+        slideShowItems.forEach( item =>{
+            item.style.transition = 'all 0.2s ease-in-out'
+        })
 
-        let slideShowItems = slideShowItemsDiv.querySelectorAll('*')
-        const newFirstItem = slideShowItems[0]
-        const newLastItems = slideShowItems[slideShowItems.length - 1]
-        const thirdItem = slideShowItems[2]
-        const fourthItem = slideShowItems[3]
-        newFirstItem.classList.remove('unanimated')
-        newLastItems.classList.add('unanimated')
-        thirdItem.classList.add('focused')
-        thirdItem.classList.remove('unfocused')
-        fourthItem.classList.remove('focused')
-        fourthItem.classList.add('unfocused')
+        container.style.marginLeft = '-28vw'
+        
+        let secondItem = slideShowItems[3]
+        secondItem.style.width = '40vw'
+        secondItem.style.height = '35vh'
+        let firstItem = slideShowItems[2]
+        firstItem.style.width= '20vw'
+        firstItem.style.height = '20vh'
 
-
-    }
-
-
-    function calculateMove(element, startX, startY) {
-        const rect = element.getBoundingClientRect();
-        return { x: startX - rect.left, y: startY - rect.top };
-    }
-    
-    function prepareTransition(element, move) {
-        element.style.transform = `translate(${move.x}px, ${move.y}px)`;
-    }
-    
-    function forceReflow(element) {
-        element.offsetWidth; // This line forces a reflow
-    }
-    
-    function applyTransition(element) {
-        setTimeout(() => {
-        element.style.transform = '';
-        }, 500); // A short delay to ensure the transition is rendered
-    }
-    
-    function reorderElementsWithTransition() {
-        const container = document.getElementById('slideShowItems');
-        const elements = Array.from(container.querySelectorAll('.slideItem'));
-    
-        // Store initial positions
-        const initialPositions = elements.map(el => el.getBoundingClientRect());
-    
-        // Prepare each element for transition
-        elements.forEach((el, index) => {
-        const move = calculateMove(el, initialPositions[index].left, initialPositions[index].top);
-        prepareTransition(el, move);
-        });
-    
-        // Force a reflow on each element
-        elements.forEach(forceReflow);
-    
-        // Reorder the elements in the DOM
-        const lastElement = container.lastElementChild;
-        container.insertBefore(lastElement, container.firstElementChild);
-    
-        // Apply the transitions
-        elements.forEach(applyTransition);
-    }
-    
-    // Call this function to reorder elements with transition
-
+        setTimeout(resolve, 200)
+    })
 }
-
-
-// width: 1885
-// height: 1017
