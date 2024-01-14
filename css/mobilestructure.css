@@ -1,0 +1,29 @@
+/* top = 5vh */
+.mainImage{ 
+    margin-top:-195vh;
+    margin-bottom: 5vh;
+    width: 20vh;
+    height:20vh;
+}
+/* bottom = 25vh */
+
+/* top = 30vh */
+.mainTitleContainer{
+    height: 15vh;
+}
+/* bottom = 45vh */
+
+/* top = 50vh */
+.slideshow{
+    margin-top: 5vh;
+    height: 45vh;
+}
+/* bottom = 95vh */
+
+/* top = 100vh */
+#ourProjects{
+    margin-top: 5vh;
+    height:65vh;
+    max-height: 65vh;
+    margin-bottom: 15vh;
+}

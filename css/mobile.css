@@ -1,0 +1,53 @@
+#logo{
+    width: 20vh;
+    height:20vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mainTitle{
+    font-size: 5vh;
+}
+
+
+ /* main sections */
+.mainSection{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 80vw;
+}
+
+.sectionText {
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for mobile */
+    grid-template-rows: auto auto; /* Two rows for mobile */
+}
+
+.textHeader {
+    grid-column: 1; /* Occupies the first column */
+    grid-row: 1; /* Occupies the first row */
+}
+.mainButton {
+    grid-column: 1; /* Occupies the first column */
+    grid-row: 2; /* Occupies the second row */
+}
+.textText {
+    grid-column: 2; /* Occupies the second column */
+    grid-row: 1 / span 2; 
+}
+
+.sectionImage Img{
+    max-width: 65vw;
+    height: 30vh;
+}
+
+
+
+/* slideshow */
+
+.arrow:hover{
+    height: 8vh;
+    width: 8vh;
+}
+
+

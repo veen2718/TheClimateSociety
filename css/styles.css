@@ -122,6 +122,7 @@ p{
 .sectionImage img{
     max-width: 35vw;
     height:40vh;
+    object-fit: cover;
 }
 
 #main2{
