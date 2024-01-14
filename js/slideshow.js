@@ -7,16 +7,22 @@ height: ${window.innerHeight}
 function displayStats(){
     const container = document.getElementById('slideShowItems')
 let slideShowItems = container.querySelectorAll('.slideItem')
-slideShowItems.forEach(item => {
-    l = item.getBoundingClientRect().x
-    l2 = 100 * l/window.innerWidth
-    w = item.getBoundingClientRect().width
-    w2 = 100 * w/window.innerWidth
+
+let items = Array.from(slideShowItems,item=>
+    [100/window.innerWidth * item.getBoundingClientRect().x, 100/window.innerWidth * item.getBoundingClientRect().width]
+)
+
+// slideShowItems.forEach(item => {
+//     l = item.getBoundingClientRect().x
+//     l2 = 100 * l/window.innerWidth
+//     w = item.getBoundingClientRect().width
+//     w2 = 100 * w/window.innerWidth
 
 
-    console.log(l , w, l2, w2);
-})
-item = container
+//     console.log(l , w, l2, w2);
+// })
+console.table(items)
+let item = container
 l = item.getBoundingClientRect().x
     l2 = 100 * l/window.innerWidth
     w = item.getBoundingClientRect().width
@@ -29,7 +35,6 @@ l = item.getBoundingClientRect().x
 document.addEventListener('DOMContentLoaded', function(){
     displayStats();
 })
-
 
 
 function AnimateRight(){
@@ -92,15 +97,19 @@ function fixLeft(){
 
 
 function moveRight(){
+    check()
     console.log("moved right")
     
     AnimateRight().then(fixRight)
+    // setTimeout(check, 750);
     
 }
 
 function moveLeft(){
+    check()
     console.log("moved left")
     AnimateLeft().then(fixLeft)
+    // setTimeout(check, 750);
 }
 
 
@@ -126,4 +135,37 @@ function AnimateLeft(){
 
         setTimeout(resolve, 200)
     })
+}
+
+function check(){
+    console.log('Checking')
+    const container = document.getElementById('slideShowItems')
+    let slideShowItems = container.querySelectorAll('.slideItem')
+
+    for (let [index, slideItem] of slideShowItems.entries()) {
+        let item = slideItem.getBoundingClientRect()
+            let width = item.width
+            let height = item.height
+        if (index != 2){
+            
+            if(Math.round(width) != Math.round(0.2 * window.innerWidth)){
+                console.log(slideItem.style.width)
+                slideItem.style.width = '20vw'
+                
+            }
+            if(Math.round(height) != Math.round(0.2 * window.innerHeight)){
+                console.log(slideItem.style.height)
+                slideItem.style.height = '20vh'
+            }
+        }else if (index == 2){
+            if(Math.round(width) != Math.round(0.4 * window.innerWidth)){
+                console.log(slideItem.style.width, 2)
+                slideItem.style.width = '40vw'
+            }
+            if(Math.round(height) != Math.round(0.35 * window.innerHeight)){
+                console.log(slideItem.style.height, 2)
+                slideItem.style.height = '35vh'
+            }
+        }
+    }
 }
