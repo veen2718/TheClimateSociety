@@ -137,3 +137,25 @@
     grid-column:2;
     grid-row: 1 / 3;
 }
+
+.team, .teamRow{
+    width: 100vw;
+}
+
+
+.member{
+    height:30vh;
+    width: 30vw;
+}
+
+.picture{
+    width: 25vw;
+    height: 20vh;
+    max-height: 20vh;
+}
+
+.info{
+    width: auto;
+    max-width: 25vw;
+    height: 5vh;
+}
