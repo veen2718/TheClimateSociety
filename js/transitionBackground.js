@@ -7,12 +7,15 @@ document.addEventListener('scroll', function() {
     var background2 = document.getElementById('background2');
 
     if (pageScroll >= triggerTop - windowHeight && pageScroll <= triggerTop) {
-        var percentInView = (pageScroll - (triggerTop - windowHeight)) / windowHeight;
-        var opacitySecondImage = Math.min(1 * percentInView, 1);
+        // var percentInView = (pageScroll - (triggerTop - windowHeight)) / windowHeight;
+        // var opacitySecondImage = Math.min(1 * percentInView, 1);
 
-        background2.style.opacity = opacitySecondImage;
+        // background2.style.opacity = opacitySecondImage;
+        document.body.style.background = 'url(/assets/home_burning.jpg) no-repeat center center fixed'
+        document.body.style.backgroundSize = 'cover'
 
     } else {
-        background2.style.opacity = 0;
+        document.body.style.background = 'url(/assets/home.jpg) no-repeat center center fixed'
+        document.body.style.backgroundSize = 'cover'
     }
 });
