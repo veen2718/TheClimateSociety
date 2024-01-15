@@ -24,7 +24,6 @@
     <div class="team">
 
 
-        <div class="teamRow">
         <div class="member">
             <img src="../assets/team/richard.jpg" alt="" class="picture">
 
@@ -80,9 +79,8 @@
                 </p>
             </div>
         </div>
-        </div>
 
-        <div class="teamRow">
+
         <div class="member">
             <img src="../assets/team/steven.JPG" alt="" class="picture">
 
@@ -136,10 +134,6 @@
                 </p>
             </div>
         </div>
-        </div>
-
-
-        <div class="teamRow">
         <div class="member">
             <img src="../assets/team/christian.JPG" alt="" class="picture">
 
@@ -193,27 +187,12 @@
                 </p>
             </div>
         </div>
-    </div>
-
-    </div>
-    </div>
-
-
-    <script>
-        const members = document.querySelectorAll('.member')
-        members.forEach(member => {
-            member.addEventListener('click', function() {
-                members.forEach(member1 => {
-                    if(member1 !== member){
-                        member1.classList.remove('clicked')
-                    }
-                })
-            this.classList.toggle('clicked') 
-            })
-            
-        })
         
 
-    </script>
+    </div>
+    </div>
+
+
+    <script src="../js/teamFocus.js"> </script>
 
 </body>

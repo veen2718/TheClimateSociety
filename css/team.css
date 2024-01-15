@@ -42,8 +42,7 @@ body{
 }
 
 .team{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 80vw;
@@ -88,6 +87,7 @@ body{
 }
 
 .member:hover{
+    transition: all 0.3s ease-in-out;
     box-shadow: 
         calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 0) inset, 
         calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 0) inset,
@@ -103,6 +103,7 @@ body{
     object-fit: cover;
     border-radius: calc(1vh + 0.5vw);
     margin:0;
+    margin-top: 1vh;
 }
 
 .info{
@@ -137,7 +138,8 @@ body{
 
 .member.clicked{
     width: 30vw;
-    height: 70vh;
+    height: auto;
+    max-height: 70vh;
     transition: all 0.3s ease-in-out;
 }
 
@@ -183,6 +185,7 @@ body{
         calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1) inset, 
         calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1) inset;
     opacity: 0;
+    padding: 1vh;
     
 }
 
@@ -195,9 +198,9 @@ body{
 }
 
 .member.clicked .bio{
-    height: 20vh;
+    height: auto;
     width: 23vw;
-    padding: 1vw;
+    margin: 2vw;
     transition: all 0.3s ease-in-out;
     opacity: 1;
 }
