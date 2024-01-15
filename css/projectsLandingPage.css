@@ -42,23 +42,21 @@ body{
 }
 
 .team{
-    display: flex;
-    flex-direction: column;
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 80vw;
-    gap: 10vh;
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: auto auto;
+    width: 100vw;
+    gap: 5vh;
+    place-items: center;
 }
 
-.teamRow{
+/* .teamRow{
     display: flex;
     flex-direction: row;
     width: 80vw;
     align-items: center;
     justify-content: space-around;
-}
+} */
 
 
 .member{
