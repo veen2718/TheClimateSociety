@@ -1,0 +1,33 @@
+.team{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr,5);
+    width: 100vw;
+    place-items: center;
+    gap: 5vw;
+}
+
+.member{
+    width: 40vw;
+}
+
+.picture{
+    width: 32vw;
+}
+
+.info{
+    width: 32vw;
+}
+
+
+.member.clicked{
+    width: 55vw;
+}
+
+
+.bio{
+    width: 32vw;
+}
+
+.member.clicked .bio{
+    width: 38vw;
+}
