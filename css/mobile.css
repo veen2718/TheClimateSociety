@@ -10,11 +10,28 @@
 }
 
 
+/* slideshow */
+
+.arrow:hover{
+    height: 8vh;
+    width: 8vh;
+}
+
+
+
+
  /* main sections */
 .mainSection{
     display: flex;
     flex-direction: column-reverse;
     max-width: 80vw;
+    height: 70vh !important;
+    max-height: 80vh !important;
+    justify-content: space-around;
+}
+
+#ourTeam{
+    flex-direction: column;
 }
 
 .sectionText {
@@ -40,14 +57,83 @@
     max-width: 65vw;
     height: 30vh;
 }
-
-
-
-/* slideshow */
-
-.arrow:hover{
-    height: 8vh;
-    width: 8vh;
+.sectionImage{
+    padding: 1vh;
 }
 
 
+
+/* clock */
+
+.clock{
+    width: 80vw;
+}
+
+.clockHeader{
+    width: 55vw;
+}
+
+.clockObject{
+    height: 10vh;
+}
+
+.Row1Object{
+    width:23vw;
+}
+.Row2Object{
+    width:18vw;
+}
+
+
+.clockRow{
+    width: 60vw;
+    justify-content: space-around;
+}
+
+
+
+/* second sections */
+
+.main2Image{
+    height: 34vw;
+    width: 34vw;
+}
+
+.main2Header{
+    max-width: 45vw;
+    text-align: left;
+}
+
+.threeWays{
+    width:93vw;
+    margin-bottom: 20vh;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.way{
+    width:90vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: normal;
+    justify-content:baseline;
+}
+
+.way img{
+    max-width: 45vw;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.wayHeader{
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 45vw;
+}
+
+.wayText{
+    max-width: 45vw;
+    grid-column:2;
+    grid-row: 1 / 3;
+}
