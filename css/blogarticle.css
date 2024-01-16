@@ -45,6 +45,9 @@ html,body{
   max-width: 40vw;
 
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  
   
 }
 
