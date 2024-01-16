@@ -40,6 +40,12 @@ html,body{
   flex-direction: column;
 }
 
+
+ul{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 .text{
   font-family: 'Open Sans', sans-serif;
   max-width: 40vw;
@@ -47,7 +53,7 @@ html,body{
   text-align: justify;
   display: flex;
   flex-direction: column;
-  
+
   
 }
 
