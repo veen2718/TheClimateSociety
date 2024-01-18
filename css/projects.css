@@ -29,7 +29,7 @@
 
 .headerText{
     font-family: 'Open Sans', sans-serif;
-    font-size: xx-large;
+    font-size: calc(1.5vw + 1.5vh);
     color: black;
     height: 5vh;
     margin-top: 3.5vh;
@@ -103,14 +103,7 @@ body{
     min-height: 35vh;
     margin-top: 5vh;
 }
-#grid[data-columns]::before {
-    content: '1 .column.size-1of4';
-    width: 100%;
-}
 
-#grid[data-columns] > div {
-    float: left;
-}
 
 .column {
     break-inside: avoid-column;
