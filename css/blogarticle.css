@@ -22,7 +22,7 @@ html,body{
 }
 
 .topSection h6{
-  margin-bottom: 20vh;
+  /* margin-bottom: 20vh; */
 }
 
 
@@ -34,9 +34,9 @@ html,body{
 }
 
 .topSection img{
-  position: absolute;
-  top: 50%; 
-  transform: translateY(-20vh);
+  /* position: absolute;
+  top: 50%;  */
+  /* transform: translateY(-20vh); */
   height: 50vh;
   width:60vw;
   object-fit: cover;
@@ -62,7 +62,7 @@ ul{
 .text{
   font-family: 'Open Sans', sans-serif;
   max-width: 40vw;
-
+  font-size: calc(.55vw + .55vh);
   text-align: justify;
   display: flex;
   flex-direction: column;
