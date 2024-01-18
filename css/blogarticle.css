@@ -40,6 +40,11 @@ html,body{
   flex-direction: column;
 }
 
+.flexText img{
+  max-width: 50vw;
+}
+
+
 
 ul{
   font-family: 'Open Sans', sans-serif;
