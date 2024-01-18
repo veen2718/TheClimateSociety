@@ -27,7 +27,7 @@ html,body{
 
 .topSection img{
   position: absolute;
-  top: 50%; /* Adjusts the vertical start position of the image */
+  top: 50%; 
   transform: translateY(-20vh);
   height: 50vh;
   width:60vw;

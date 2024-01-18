@@ -1,0 +1,18 @@
+.main, .mainImage{
+    width: 0px !important;
+    max-width: 0px;
+}
+
+.TitleContainer{
+    left:0;
+    width: 100vw;
+    height: auto;;
+}
+
+.TitleText{
+    text-align: center !important;
+}
+
+.text{
+    max-width: 75vw;
+}
