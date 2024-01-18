@@ -18,12 +18,20 @@ html,body{
   overflow: auto;
   width: 100vw;
   margin-bottom: 30vh;
+  text-align: center;
 }
 
 .topSection h6{
   margin-bottom: 20vh;
 }
 
+
+.topSection h4{
+  font-size: calc(2.5vw + 2.5vh);
+}
+.topSection h6{
+  font-size: calc(1.5vw + 1.5vh);
+}
 
 .topSection img{
   position: absolute;

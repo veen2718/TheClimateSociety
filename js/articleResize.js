@@ -1,11 +1,11 @@
  
         function resizeArticle(col,y,event){
-            if(!articleactive){
+            if(window.innerWidth > window.innerHeight){
             var row = document.getElementById(y)
             row.style.gridTemplateColumns = col}
         }
         function resizeArticleDefault(y,event){
-            if(!articleactive){
+            if(window.innerWidth > window.innerHeight){
             var row = document.getElementById(y)
             row.style.gridTemplateColumns = `1fr 1fr 1fr 1fr`
             }}
