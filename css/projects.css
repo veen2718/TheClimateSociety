@@ -110,9 +110,92 @@ body{
     break-inside: avoid-column;
 }
 
-/* 
+
 .imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+
+  }
+
+.imageContainer img{
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+.invasiveImages{
+    max-width: 25vw;
+    max-height:25vh;
+}
+
+
+#brazilReforestingContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-  } */
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(10, 1fr)
+}
+
+.reforestBrazilPortrait{
+    grid-column: span 2;
+    width: 18vw;
+    height: 20vh;
+}
+
+.reforestBrazilLandscape{
+    grid-column: span 5;
+    width: 40vw;
+    height: 30vh;
+}
+
+
+
+
+
+.reforestingLocal1{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: auto auto;
+    max-width: 100vw;
+
+}
+
+
+.reforestingLocal1Portrait, .reforestingLocal1Portrait2{
+    width: 30vw;
+    height: 40vh !important;
+}
+
+.reforestingLocal1Portrait{
+    grid-row: 1;
+}
+
+
+.reforestingLocal1Landscape{
+    grid-column: span 2;
+    height: 40vh !important;
+}
+
+
+
+
+
+
+.reforestingLocal2{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+.reforesting2Landscape{
+    grid-column: span 2;
+    width: 18vw;
+    height: 25vh !important;
+}
+
+.reforesting2Portrait{
+    width: 9vw;
+    height: 25vh !important;
+}
