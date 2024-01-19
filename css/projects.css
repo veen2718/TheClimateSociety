@@ -102,6 +102,7 @@ body{
     max-width: 70vw;
     min-height: 35vh;
     margin-top: 5vh;
+    font-size: calc(0.65vh + 0.65vw)
 }
 
 
