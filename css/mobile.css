@@ -198,3 +198,32 @@
     padding-left: 2vw;
     padding-right: 2vw;
 }
+
+
+
+/* partners */
+
+
+.partners{
+ grid-template-columns: auto auto;
+ grid-template-rows: repeat(3, auto);
+ height: auto;
+}
+
+
+#magee, #ecb, #an{
+    grid-column: 1;
+}
+
+#edn, #safeway, #saveOns{
+    grid-column: 2;
+}
+
+
+#magee, #edn{
+    grid-row: 1
+}
+
+#ecb, #safeway{
+    grid-row: 2
+}
