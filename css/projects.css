@@ -84,6 +84,7 @@ body{
     align-self: center;
     height:5vh;
     margin-bottom:4vh;
+    font-size: calc(1vh + 1vw);
 }
 .image{
     height: 40vh;
