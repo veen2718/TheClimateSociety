@@ -64,8 +64,7 @@ ul{
   max-width: 40vw;
   font-size: calc(.55vw + .55vh);
   text-align: justify;
-  display: flex;
-  flex-direction: column;
+  display: grid
 
   
 }

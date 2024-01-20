@@ -200,3 +200,63 @@ body{
     width: 9vw;
     height: 25vh !important;
 }
+
+
+
+
+
+.protest{
+    display: flex;
+    flex-direction: row;
+}
+
+.protest img{
+    width: 16vw;
+    height: 46vh;
+}
+
+
+
+.localCleanup{
+    display: flex;
+    flex-direction: row;
+}
+
+.localCleanup img{
+    max-width: 40vw;
+    max-height:40vh;
+}
+
+
+
+.brazilTalk{
+    display: flex;
+    flex-direction: row;
+}
+
+.brazilTalk img{
+    width: 20vw;
+    height: 30vh;
+}
+
+
+
+.ubcGarden{
+    display:grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: auto auto;
+    align-items: center;
+    /* gap: 0px; */
+}
+
+.ubcGardenLandscape{
+    grid-column: span 3;
+    width: 25vw;
+    height: 30vh !important;
+}
+
+.ubcGardenPortrait{
+    grid-column: span 2;
+    width:14vw;
+    height: 30vh !important;
+}
