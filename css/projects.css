@@ -260,3 +260,12 @@ body{
     width:14vw;
     height: 30vh !important;
 }
+
+.localTalk{
+    flex-direction: row;
+}
+
+.localTalk img{
+    width: 15vw;
+    height:15vh;
+}
