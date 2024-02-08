@@ -62,7 +62,7 @@ ul{
 .text{
   font-family: 'Open Sans', sans-serif;
   max-width: 40vw;
-  font-size: calc(.55vw + .55vh);
+  font-size: calc(.75vw + .75vh);
   text-align: justify;
   display: grid
 
