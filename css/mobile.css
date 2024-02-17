@@ -179,25 +179,9 @@
 
 .member{
     height:35vh;
-    width: 40vw;
+    width: 90vw;
 }
 
-.picture{
-    width: 30vw;
-    height: 20vh;
-    max-height: 20vh;
-}
-
-.info{
-    width: auto;
-    max-width: 25vw;
-    height: 5vh;
-}
-
-.name{
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
 
 
 
