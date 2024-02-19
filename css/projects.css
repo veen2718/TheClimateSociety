@@ -281,3 +281,13 @@ body{
     width: auto;
     height:25vh;
 }
+
+
+.protest1{
+    flex-direction: row;
+}
+
+.protest1 img{
+    width: 20vw;
+    height:auto;
+}
