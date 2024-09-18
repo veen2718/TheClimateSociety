@@ -2,4 +2,4 @@
 
 The website for a climate-focused non-profit
 
-beta is at https://veen2718.github.io/TheClimateSociety
+beta is at tcs-beta.netlify.app
