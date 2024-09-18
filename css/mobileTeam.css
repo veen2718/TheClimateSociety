@@ -1,6 +1,6 @@
 .team{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1fr,5);
+    grid-template-rows: repeat(1fr,3);
     width: 100vw;
     place-items: center;
     gap: 5vw;
