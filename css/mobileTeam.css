@@ -1,6 +1,6 @@
 .team{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1fr,3);
+    grid-template-columns: repeat(8, 1fr) !important;
+    grid-template-rows: repeat(1fr,3) !important;
     width: 100vw;
     place-items: center;
     gap: 5vw;
@@ -30,4 +30,13 @@
 
 .member.clicked .bio{
     width: 38vw;
+}
+
+
+.row2a{
+    grid-column: span 4 !important;
+}
+
+.row2b{
+    grid-column: 3 / 7 !important;
 }
