@@ -1,6 +1,6 @@
 .team{
-    grid-template-columns: repeat(8, 1fr) !important;
-    grid-template-rows: repeat(1fr,3) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(5,1fr) !important;
     width: 100vw;
     place-items: center;
     gap: 5vw;
@@ -8,6 +8,11 @@
 
 .member{
     width: 40vw;
+    grid-column: span 1;
+}
+
+.member2{
+    grid-column: span 1 !important;
 }
 
 .picture{
@@ -33,10 +38,10 @@
 }
 
 
-.row2a{
+/* .row2a{
     grid-column: span 4 !important;
 }
 
 .row2b{
     grid-column: 3 / 7 !important;
-}
+} */
