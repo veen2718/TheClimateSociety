@@ -25,7 +25,7 @@
     <div class="team">
 
 
-        
+        <!-- <div class="margin"></div> -->
 
         <div class="member">
             <div class="placeholder"> </div>
@@ -93,7 +93,8 @@
                 </p>
             </div>
         </div>
-
+        <!-- <div class="margin"></div> -->
+        <!-- <div class="margin"></div> -->
         <div class="member">
             <img src="../assets/team/joao.jpg" alt="" class="picture">
 
@@ -229,7 +230,15 @@
 
     </div>
     </div>
-
+    <template id="popup">
+        <div class="overlay">
+            <div class="overlaySide">
+                <img src="../assets/team/{{image}}" class="overlayBio" alt="">
+                <h2 class="overlayTitle">{{title}}</h2>
+                <h3 class="overlaySubtitle">{{subtitle}}</h2>
+            </div>
+        </div>
+    </template>
 
     <script src="../js/teamFocus.js"> </script>
 

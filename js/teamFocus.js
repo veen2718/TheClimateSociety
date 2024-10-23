@@ -2,15 +2,15 @@ const members = document.querySelectorAll('.member');
 
 members.forEach(member => {
     member.addEventListener('click', function() {
-        // Remove 'clicked' class from all other members
-        members.forEach(otherMember => {
-            if (otherMember !== this) {
-                otherMember.classList.remove('clicked');
-            }
-        });
 
-        // Toggle 'clicked' class on this member
-        this.classList.toggle('clicked');
+        // members.forEach(otherMember => {
+        //     if (otherMember !== this) {
+        //         otherMember.classList.remove('clicked');
+        //     }
+        // });
+
+
+        // this.classList.toggle('clicked');
     });
 });
 
