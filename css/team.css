@@ -70,6 +70,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
     gap:3vh;
 
     border-radius: calc(0.5vh + 0.25vw);
@@ -93,7 +94,10 @@ body{
     grid-column: span 3 !important;
     
 }
-
+.spacer{
+    grid-column: span 1 !important;
+}
+/* 
 .member:hover{
     transition: all 0.3s ease-in-out;
     box-shadow: 
@@ -101,7 +105,7 @@ body{
         calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 0) inset,
         calc(0.5vh + 0.25vw) calc(0.5vh + 0.25vw) calc(1vh + .5vw) 0px rgba(0, 0, 0, 1), 
         calc(-0.5vh - 0.25vw) calc(-0.5vh - 0.25vw) calc(1vh + .5vw) 0px rgba(88, 81, 102, 1);
-}
+} */
 
 
 
