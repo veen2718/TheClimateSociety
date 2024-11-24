@@ -91,11 +91,14 @@ body{
 }
 
 .member2{
-    grid-column: span 3 !important;
+    grid-column: span 5 !important;
     
 }
 .spacer{
     grid-column: span 1 !important;
+}
+.spacer2{
+    display: none;
 }
 /* 
 .member:hover{
