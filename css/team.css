@@ -1,5 +1,11 @@
 body{
     background: #3D3846;
+    
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: fit-content;
 }
 
 .header{
@@ -39,6 +45,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    width: 100vw;
     
 }
 
@@ -46,11 +54,12 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr); 
     grid-template-rows: 1fr 1fr 1fr;
-    width: 80vw;
+    width: 90vw;
     row-gap: 10vh;
     /* column-gap: auto; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-self: center;
 }
 
 /* .teamRow{
@@ -69,6 +78,7 @@ body{
     width:18vw;
     flex-direction: column;
     justify-content: center;
+    justify-self: center;
     align-items: center;
     align-self: center;
     gap:3vh;
@@ -84,7 +94,6 @@ body{
 
     transition: all 0.3s ease-in-out;
     transition: box-shadow 0.3s ease;
-    cursor: pointer;
 
     grid-column: span 4;
 
