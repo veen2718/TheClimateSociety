@@ -291,3 +291,29 @@ body{
     width: 20vw;
     height:auto;
 }
+
+.lcoy1{
+    flex-direction: row;
+}
+.lcoy1 img{
+    width: 25vw !important;
+}
+
+.lcoy2{
+    flex-direction: column;
+}
+.lcoy2 img{
+    width: 17vw;
+}
+
+.lcoy3{
+    flex-direction: row;
+    max-width: 100vw !important;
+}
+.lcoy3 img{
+    width: 51vw;
+}
+
+.lcoyImg0{
+    width: 22vw !important;
+}
