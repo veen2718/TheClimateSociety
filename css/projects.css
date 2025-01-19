@@ -280,6 +280,7 @@ body{
 .brazilianInterview img{
     width: auto;
     height:25vh;
+    max-width: 45vw !important;
 }
 
 
