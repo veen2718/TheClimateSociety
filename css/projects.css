@@ -346,3 +346,10 @@ body{
 .COP29_Forestry{
     margin-bottom: 0;
 }
+
+
+.COP29_video{
+    width: 60vw;
+    height: 33.75vw;
+    margin: auto auto;
+}
